@@ -1,0 +1,74 @@
+
+ Reading in atomic data
+
+ ***Warning**** ---    21 weak transitions cut in GENOSC_V9 --- NeIII_F_OSCDAT
+ ***Warning**** ---   183 weak transitions cut in GENOSC_V9 --- Ne2_F_OSCDAT
+ ***Warning**** ---   240 weak transitions cut in GENOSC_V9 --- NeI_F_OSCDAT
+ Warning -- FORMAT Date not found in oscilator file:NaI_F_OSCDAT
+ ***Warning**** ---    65 weak transitions cut in GENOSC_V9 --- NaI_F_OSCDAT
+ ***Warning**** ---    36 weak transitions cut in GENOSC_V9 --- MgIII_F_OSCDAT
+ ***Warning**** ---   103 weak transitions cut in GENOSC_V9 --- Mg2_F_OSCDAT
+ ***Warning**** ---    25 weak transitions cut in GENOSC_V9 --- AlIII_F_OSCDAT
+ Warning -- FORMAT Date not found in oscilator file:Al2_F_OSCDAT
+ ***Warning**** ---     9 weak transitions cut in GENOSC_V9 --- SkIV_F_OSCDAT
+ ***Warning**** ---    15 weak transitions cut in GENOSC_V9 --- SkIII_F_OSCDAT
+ ***Warning**** ---    13 weak transitions cut in GENOSC_V9 --- Sk2_F_OSCDAT
+ ***Warning**** ---    12 weak transitions cut in GENOSC_V9 --- SIV_F_OSCDAT
+ ***Warning**** ---    29 weak transitions cut in GENOSC_V9 --- SIII_F_OSCDAT
+ ***Warning**** ---  1868 weak transitions cut in GENOSC_V9 --- S2_F_OSCDAT
+ ***Warning**** ---  1438 weak transitions cut in GENOSC_V9 --- ArIII_F_OSCDAT
+ ***Warning**** ---  9812 weak transitions cut in GENOSC_V9 --- Ar2_F_OSCDAT
+ ***Warning**** ---   233 weak transitions cut in GENOSC_V9 --- ArI_F_OSCDAT
+ Warning -- FORMAT Date not found in oscilator file:CaIV_F_OSCDAT
+ ***Warning**** ---    14 weak transitions cut in GENOSC_V9 --- CaIV_F_OSCDAT
+ Warning -- FORMAT Date not found in oscilator file:CaIII_F_OSCDAT
+ Warning -- FORMAT Date not found in oscilator file:Ca2_F_OSCDAT
+ ***Warning**** ---   117 weak transitions cut in GENOSC_V9 --- Ca2_F_OSCDAT
+ ***Warning**** ---     4 weak transitions cut in GENOSC_V9 --- ScIII_F_OSCDAT
+ ***Warning**** ---   124 weak transitions cut in GENOSC_V9 --- Sc2_F_OSCDAT
+ ***Warning**** ---  1026 weak transitions cut in GENOSC_V9 --- TkIII_F_OSCDAT
+ ***Warning**** ---  1284 weak transitions cut in GENOSC_V9 --- Tk2_F_OSCDAT
+ Warning -- FORMAT Date not found in oscilator file:VI_F_OSCDAT
+ ***Warning**** ---  1901 weak transitions cut in GENOSC_V9 --- CrIV_F_OSCDAT
+ ***Warning**** ---  1045 weak transitions cut in GENOSC_V9 --- CrIII_F_OSCDAT
+ ***Warning**** ---  1710 weak transitions cut in GENOSC_V9 --- Cr2_F_OSCDAT
+ ***Warning**** ---  1624 weak transitions cut in GENOSC_V9 --- MnIII_F_OSCDAT
+ ***Warning**** ---    79 weak transitions cut in GENOSC_V9 --- Mn2_F_OSCDAT
+ ***Warning**** ---  1654 weak transitions cut in GENOSC_V9 --- FeV_F_OSCDAT
+ ***Warning**** --- 34375 weak transitions cut in GENOSC_V9 --- FeIV_F_OSCDAT
+ ***Warning**** --- 37512 weak transitions cut in GENOSC_V9 --- FeIII_F_OSCDAT
+ Warning -- FORMAT Date not found in oscilator file:Fe2_F_OSCDAT
+ ***Warning**** --- 21957 weak transitions cut in GENOSC_V9 --- Fe2_F_OSCDAT
+ ***Warning**** ---   973 weak transitions cut in GENOSC_V9 --- FeI_F_OSCDAT
+ ***Warning**** ---  6106 weak transitions cut in GENOSC_V9 --- CoV_F_OSCDAT
+ ***Warning**** --- 32692 weak transitions cut in GENOSC_V9 --- CoIV_F_OSCDAT
+ ***Warning**** --- 41323 weak transitions cut in GENOSC_V9 --- CoIII_F_OSCDAT
+ ***Warning**** --- 70507 weak transitions cut in GENOSC_V9 --- Co2_F_OSCDAT
+ ***Warning**** ---  1555 weak transitions cut in GENOSC_V9 --- NkV_F_OSCDAT
+ ***Warning**** --- 34839 weak transitions cut in GENOSC_V9 --- NkIV_F_OSCDAT
+ ***Warning**** --- 34269 weak transitions cut in GENOSC_V9 --- NkIII_F_OSCDAT
+ ***Warning**** --- 18293 weak transitions cut in GENOSC_V9 --- Nk2_F_OSCDAT
+  
+ *************** Warning -- Warning -- Warning ****************
+ Max. cont. freq may be too small in in SET_X_FREQ_V2
+ Max. cont. should generally be set to 1000 when X-rays present
+ Need to allow for ionization from inner shells. Generally can
+ ignore ionization from n=1 (=PQN) state of iron group elements
+ since these can also ionize from n=2 sate. A list of effected
+ ionization routes follows:
+ 
+  IZ=21    NE=20   PQN= 1   ANG= 0      Edge Freq(10^15 Hz)=  1.08E+03
+  IZ=22    NE=21   PQN= 1   ANG= 0      Edge Freq(10^15 Hz)=  1.20E+03
+  IZ=24    NE=23   PQN= 1   ANG= 0      Edge Freq(10^15 Hz)=  1.44E+03
+  IZ=24    NE=22   PQN= 1   ANG= 0      Edge Freq(10^15 Hz)=  1.45E+03
+  IZ=25    NE=24   PQN= 1   ANG= 0      Edge Freq(10^15 Hz)=  1.58E+03
+  IZ=26    NE=26   PQN= 1   ANG= 0      Edge Freq(10^15 Hz)=  1.72E+03
+  IZ=26    NE=25   PQN= 1   ANG= 0      Edge Freq(10^15 Hz)=  1.72E+03
+  IZ=26    NE=24   PQN= 1   ANG= 0      Edge Freq(10^15 Hz)=  1.72E+03
+  IZ=26    NE=23   PQN= 1   ANG= 0      Edge Freq(10^15 Hz)=  1.72E+03
+  IZ=27    NE=26   PQN= 1   ANG= 0      Edge Freq(10^15 Hz)=  1.86E+03
+  IZ=27    NE=25   PQN= 1   ANG= 0      Edge Freq(10^15 Hz)=  1.86E+03
+  IZ=27    NE=24   PQN= 1   ANG= 0      Edge Freq(10^15 Hz)=  1.87E+03
+  IZ=28    NE=27   PQN= 1   ANG= 0      Edge Freq(10^15 Hz)=  2.01E+03
+  IZ=28    NE=26   PQN= 1   ANG= 0      Edge Freq(10^15 Hz)=  2.01E+03
+  IZ=28    NE=25   PQN= 1   ANG= 0      Edge Freq(10^15 Hz)=  2.02E+03

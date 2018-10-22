@@ -1,0 +1,252 @@
+ ****************************************
+ ******WARNING in CMFGEN*****************
+ Solution method inconsistent with NUM_BNDS
+ METH_SOL=TRI   NUM_BNDS=            1
+ Using diagnoal solution
+
+ Beginning to read Charge data
+ Charge data successfully read
+ 
+!                                                                               
+! X-ray spectra produced by RS code;                                            
+! Abundances are: P                                                             
+! 10.99  8.56  8.05  8.93  8.09  7.58  7.55  7.21  6.56  6.36  7.54  6.25       
+!                                                                               
+         5000     [N_BINS]        # freq bins
+  1.00000E+01     [BIN_MIN]        
+  1.00000E+00     [BIN_SIZE]       
+!                                                                               
+           30     [N_TEMP]        # freq bins
+  6.00000E+00     [LOG_T_MIN]      
+  5.00000E-02     [DEL_LOG_T]      
+!                                                                               
+            1     [N_ED]          # freq bins
+  1.00000E+01     [LOG_ED_MIN]     
+  1.00000E+00     [DEL_LOG_ED]     
+ 
+ Accessing isotope data from NUC_DATA_FILE
+ Successfully read in isotope data from NUC_DATA_FILE
+ Successfully read in NUCLEAR data
+
+ Warning in RDPHOT_GEN_V1: OI          
+ Sigma of smoothing Gaussian is unavailable
+ Assuming data does not need to be smoothed
+ Warning in RDPHOT_GEN_V1: Ar2         
+ Sigma of smoothing Gaussian is unavailable
+ Assuming data does not need to be smoothed
+ Opening arnaud_rothenflug.dat
+ Reading tabulated value
+ Reading tabulated value
+ Reading tabulated value
+ Reading tabulated value
+ Reading tabulated value
+ Reading tabulated value
+ Reading tabulated value
+ Reading tabulated value
+ Reading tabulated value
+ Reading tabulated value
+ Reading tabulated value
+ Reading tabulated value
+ Reading tabulated value
+ Reading tabulated value
+ Reading tabulated value
+
+ Successfully opened file MODEL
+ Error opening POINT1 in SCR_READ
+ Error opening POINT2 in SCR_READ
+ Error on reading Pointers in READ_SCRTEMP
+ Starting a new model.
+ *_IN files will be used to start model
+ Setting ITS_DONE keyword in HYDRO_DEFAULTS to 0
+ Successfuly read SN data in SET_RV_HYDRO_V3
+ Setting Velocity so pure Hubble law in SET_RV_HYDRO_V3
+ Read in R grid from RDINR in SET_RV_HYDRO_MODEL
+ Updated RP and RMAX in VADAT as new SN hydro model
+
+ Warning from INS_LINE_V6
+  1021 weak lines in extreme IR will be ignored as outside continuum range.
+     Min(Nu_CONT)=   3.0000000000000001E-003
+     Min(Nu_LINE)=   4.4069491325141041E-006
+ In INS_LINE_V6 FRAC_DOP is    1.000000000000000     
+ In INS_LINE_V6 VDop is    50.00000000066049     
+ Minimum frequency spacing is: 5.00E+00km/s
+ 
+ The continuum will be evaluated at 18153 frequencies
+ Number of line frequencies is:         372164
+ Number of frequencies is:               60314
+  
+ Warning from SET_FREQUENCY_GRID
+   750 weak lines in extreme IR will be ignored as outside continuum range.
+ Min(Nu_CONT)=   3.0000000000000001E-003
+ Min(Nu_LINE)=   4.4069491325141041E-006
+    50.00000000000000     
+    1.100000000000000     
+    45529.32168921965     
+ Maximum red  profile extent is  8.324E-01 5.023E+04 km/s
+ Maximum red  wing    extent is  3.842E-01 1.846E+05 km/s
+ Maximum blue profile extent is  1.168E+00 5.023E+04 km/s
+ Maximum blue wing    extent is  1.181E+00 5.423E+04 km/s
+
+ Entering RD_SN_DATA
+    Obtained non-POP vectors in RD_SN_DATA
+    RD_SN_DATA has read ED and T
+    Read SN populations in RD_SN_DATA
+    Read SN isotope populations in RD_SN_DATA
+    Normalized mass fractions in RD_SN_DATA
+    Maximum normalization factor was    1.000000007669911     
+    Minimum normalization factor was   0.9996508356738505     
+  
+ In DO_SPECIES_DECAYS, Delta t = 136840.32 s (  1.58 days)
+  
+ Summary of chains contributing to radioactive energy depostions.
+  
+  56   NICK         COB          IRON          3.5383E+09    5.1318E+07
+  57   NICK         COB          IRON          5.8362E+05    2.4512E+04
+  48   CHRO         VAN          TIT           8.6658E+06    4.1097E+05
+  49   CHRO         VAN          TIT           0.0000E+00    0.0000E+00
+  51   MAN          CHRO         VAN           5.9392E+03    0.0000E+00
+  55   COB          IRON         MAN           2.4512E+02    4.4459E+01
+  37   POT          ARG          CHL           3.0923E+00    0.0000E+00
+  52   IRON         MAN          CHRO          1.1555E-04    3.3699E-05
+  44   TIT          SCAN         CAL           2.0584E+02    4.4894E+01
+
+       TOTAL                                   3.5476E+09    5.1754E+07
+  
+ WARNING from RD_SN_DATA 
+ The following isotopes have changed their abundance by over a factor of 3.
+ This may have occurred because you are using a revised NUCLEAR decay data file.
+ Do diff SN_HYDRO_DATA SN_HYDRO_FOR_NEXT_MODEL to see changes.
+ This may affect the heating, partyicularly when using energy deposition averaged over time.
+   POT      37
+   CHRO     48
+   MAN      52
+   IRON     52
+   COB      55
+  
+ Exiting RD_SN_DATA
+
+
+ Using direct interpolation option (i.e. GRID) for new model.
+
+ Number of charge transitions read in is           19
+ Number of charge transitions omitted is           19
+ Number of revised charge transitions, including split state, is            0
+ Done memory allocations for charge exchange reactions
+ Maximum level count is            5
+Running the gamma-ray routine GAMRAY_SUB_V3
+ Running GAM_NUC_DECAY_DATA_SUB_V3
+# of Gamma-Ray decay lines read:  65
+# of isotopes read:  18
+ Making the frequency grid with version 16
+Gamma-ray line energy repeated:   0.511000
+Gamma-ray line energy repeated:   0.511000
+Gamma-ray line energy repeated:   0.511000
+Gamma-ray line energy repeated:   0.511000
+Gamma-ray line energy repeated:   0.511000
+Gamma-ray line energy repeated:   0.511000
+Gamma-ray line energy repeated:   0.511000
+Gamma-ray line energy repeated:   0.511000
+Gamma-ray line energy repeated:   0.511000
+Gamma-ray line energy repeated:   0.511000
+Gamma-ray line energy repeated:   0.511000
+Gamma-ray line energy repeated:   0.511000
+Gamma-ray line energy repeated:   0.511000
+Number of Gamma ray lines allocated:  65
+Number of Gamma ray lines used:  52
+  1    8.707179E+20  3.6010
+  2    7.914078E+20  3.2730
+  3    7.865718E+20  3.2530
+  4    7.742401E+20  3.2020
+  5    7.565888E+20  3.1290
+  6    7.278147E+20  3.0100
+  7    7.169338E+20  2.9650
+  8    6.760697E+20  2.7960
+  9    6.281936E+20  2.5980
+ 10    5.417263E+20  2.2404
+ 11    4.920608E+20  2.0350
+ 12    4.872248E+20  2.0150
+ 13    4.641330E+20  1.9195
+ 14    4.282259E+20  1.7710
+ 15    4.249616E+20  1.7575
+ 16    3.776899E+20  1.5620
+ 17    3.467638E+20  1.4341
+ 18    3.405738E+20  1.4085
+ 19    3.331022E+20  1.3776
+ 20    3.312645E+20  1.3700
+ 21    3.288465E+20  1.3600
+ 22    3.183524E+20  1.3166
+ 23    3.172643E+20  1.3121
+ 24    2.993470E+20  1.2380
+ 25    2.841137E+20  1.1750
+ 26    2.797613E+20  1.1570
+ 27    2.509873E+20  1.0380
+ 28    2.378092E+20  0.9835
+ 29    2.362375E+20  0.9770
+ 30    2.282823E+20  0.9441
+ 31    2.251390E+20  0.9311
+ 32    2.048037E+20  0.8470
+ 33    1.963407E+20  0.8120
+ 34    1.813492E+20  0.7500
+ 35    1.235592E+20  0.5110
+ 36    1.160635E+20  0.4800
+ 37    1.153864E+20  0.4772
+ 38    9.132745E+19  0.3777
+ 39    7.739983E+19  0.3201
+ 40    7.454660E+19  0.3083
+ 41    6.528570E+19  0.2700
+ 42    4.079148E+19  0.1687
+ 43    3.820423E+19  0.1580
+ 44    3.697105E+19  0.1529
+ 45    3.300555E+19  0.1365
+ 46    3.075682E+19  0.1272
+ 47    2.952365E+19  0.1221
+ 48    2.717820E+19  0.1124
+ 49    2.190698E+19  0.0906
+ 50    1.506407E+19  0.0623
+ 51    3.481904E+18  0.0144
+ 52    6.286772E+17  0.0026
+Using code definition for NU_MAX instead of user input..
+NU_MAX (MeV):     4.1667
+ NU_MIN:   2.4179890679047978E+017
+ NU_MIN (keV):    1.000000000000000     
+ NU_RED_INF2(NGAM):   6.1206732821112346E+017
+ NU_RED_INF2(NGAM) (keV):    2.531307259968233     
+Number of gamma frequency grid pts: 26584
+# of non-monotonicly decreasing gamma nu grid pts:         0
+ USING CHANGED GAMMA_INT_EMISS_V7
+ DELTA_T:    136840.3199999999     
+Calculating and normalizing energies of G-ray lines...
+Species       Mass      Kin. E           TOT_E         E/DECAY           %diff        NORM_FAC
+NICK         55.9421   0.00000         1.71810         1.71828         0.00010         1.00000
+COB          55.9398   0.11590         3.64094         3.74889         0.02880         1.02965
+NICK         56.9398   0.15450         2.08220         2.09130         0.00435         1.00437
+COB          56.9363   0.00000         0.12041         0.12180         0.01137         1.01150
+CHRO         47.9540   0.00150         0.43406         0.43400         0.00013         1.00000
+VAN          47.9523   0.14490         3.04473         3.05530         0.00346         1.00347
+CHRO         48.9513   0.59780         1.65301         1.65300         0.00000         1.00000
+VAN          48.9485   0.00000         0.00000         0.00000         0.00000         1.00000
+MAN          50.9482   0.93340         1.92561         1.92560         0.00000         1.00000
+CHRO         50.9448   0.00000         0.03172         0.03170         0.00069         1.00000
+COB          54.9420   0.43040         2.37308         2.37300         0.00004         1.00000
+IRON         54.9383   0.00000         0.00000         0.00000         0.00000         1.00000
+POT          36.9734   2.34730         3.41933         3.41930         0.00001         1.00000
+ARG          36.9668   0.00000         0.00014         0.00010         0.43000         0.69930
+IRON         51.9481   0.19070         0.93656         0.94210         0.00588         1.00591
+MAN          51.9456   1.11300         3.55456         3.56040         0.00164         1.00164
+TIT          43.9597   0.00000         0.00000         0.00000         0.00000         1.00000
+SCAN         43.9594   0.59580         2.71508         2.73170         0.00608         1.00612
+ Set up gamma-ray transfer routine variables...
+ND_EXT: 109
+  Entering DEFINE_GRID_V2_GAM
+    Calculating characteristic rays.....
+    From CHARACTERISTICS_V2_GAM.....
+  Inside CHARACTERISTICS_V2_GAM
+    Exited CHARACTERISTICS_V2_GAM.....
+ Saving angles for gamma ray routines
+ ALLOCATED R_MU
+ Size of R_MU:          109
+   leaving DEFINE_GRID_V2_GAM
+  Exiting DEFINE_GRID_V2_GAM
+ Using GAMRAY_ENERGY_DEPOSIT_V5
+Finished gamma-ray scattering and deposition
+Leaving GAMRAY_SUB_V3

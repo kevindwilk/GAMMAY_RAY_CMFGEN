@@ -1,0 +1,24 @@
+
+ The following reactions were not included.
+ This may have been because a species was not included in this model.
+ Alternatively check species and level names for consistency with model atoms.
+
+ CIII{2s2p3Po}                 HeI{1s1s1Se}                  C2{2s2_2p_2Po}                He2{1___}
+ N2{2p^2_3Pe}                  HI{1___}                      NI{2p^3_4So}                  H2{ION}
+ NIII{2s2s2p2Po}               HI{1___}                      N2{2p^2_3Pe}                  H2{ION}
+ NIII{2s2s2p2Po}               HeI{1s1s1Se}                  N2{2p^2_3Pe}                  He2{1___}
+ O2{2s2_2p3_4So}               HI{1___}                      OI{2s2_2p4_3Pe}               H2{ION}
+ OIII{2p^2_3Pe}                HI{1___}                      O2{2s2_2p3_4So}               H2{ION}
+ SkIII{3s21Se}                 HI{1___}                      Sk2{3s2(1S)3p2Po}             H2{ION}
+ SkIV{3s2Se}                   HI{1___}                      SkIII{3s21Se}                 H2{ION}
+ TkIV{3d_2De}                  HI{1___}                      TkIII{3d2_3Fe}                H2{ION}
+ CrIII{3d4_5De}                HI{1___}                      Cr2{3d5_a6Se}                 H2{ION}
+ CrIV{3d3_4Fe}                 HI{1___}                      CrIII{3d4_5De}                H2{ION}
+ MnIII{3d5_a6Se}               HI{1___}                      Mn2{3d5(6S)4s_a7Se}           H2{ION}
+ MnIV{3d4_5De}                 HI{1___}                      MnIII{3d5_a6Se}               H2{ION}
+ FeIII{3d65De}                 HI{1___}                      Fe2{3d6(5D)4sa6De}            H2{ION}
+ FeIV{3d56Se}                  HI{1___}                      FeIII{3d65De}                 H2{ION}
+ CoIII{3d7_a4Fe}               HI{1___}                      Co2{3d8_a3Fe}                 H2{ION}
+ CoIV{3d6_5De}                 HI{1___}                      CoIII{3d7_a4Fe}               H2{ION}
+ NkIII{3d8_3Fe}                HI{1___}                      Nk2{3d9_2De}                  H2{ION}
+ NkIV{3d7_4Fe}                 HI{1___}                      NkIII{3d8_3Fe}                H2{ION}

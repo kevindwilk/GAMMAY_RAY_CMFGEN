@@ -1,0 +1,14 @@
+ 
+Model started at: Tue Dec 5 13:58:05 EST 2017
+Machine name is osprey.phyast.pitt.edu
+ 
+PID of batch.sh is: 28148
+ 
+PID of cmfgen.exe is: 28719
+Warning: ieee_invalid is signaling
+Warning: ieee_denorm is signaling
+Warning: ieee_underflow is signaling
+Warning: ieee_inexact is signaling
+FORTRAN STOP
+ 
+Program finished on: Wed Dec 6 06:57:55 EST 2017

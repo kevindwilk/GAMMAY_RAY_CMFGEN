@@ -1,0 +1,162 @@
+cmf_formal_rel_v2.f:31:	1            JNU,FEDD,RETURNED_IN_HBC,RETURNED_OUT_HBC,IPLUS,
+cmf_formal_rel_v2.f:62:	REAL*8 FEDD(ND)
+cmf_formal_rel_v2.f:525:	FEDD=KNU_STORE/JNU_STORE
+cmf_formal_rel_v3.f:31:	1            JNU,FEDD,RET_HNU_AT_IB,RET_HNU_AT_OB,IPLUS,
+cmf_formal_rel_v3.f:64:	REAL*8 FEDD(ND)
+cmf_formal_rel_v3.f:573:	FEDD=KNU_STORE/JNU_STORE
+cmf_formal_rel_v4.f:31:	1            JNU,FEDD,RET_HNU_AT_IB,RET_HNU_AT_OB,IPLUS,
+cmf_formal_rel_v4.f:67:	REAL*8 FEDD(ND)
+cmf_formal_rel_v4.f:593:	FEDD=KNU_STORE/JNU_STORE
+cmf_formal_rel_v4_gam.f:31:	1            JNU,FEDD,RET_HNU_AT_IB,RET_HNU_AT_OB,IPLUS,
+cmf_formal_rel_v4_gam.f:73:	REAL*8 FEDD(ND)
+cmf_formal_rel_v4_gam.f:644:	FEDD=KNU_STORE/JNU_STORE
+comp_add_edd_facs.f:8:	1              RJ,HNU,FEDD,GEDD,N_ON_J,HBC_CMF,NBC_CMF,INBC,
+comp_add_edd_facs.f:18:	REAL*8 FEDD(ND)			!K/J at node
+comp_add_edd_facs.f:113:	TA(1:ND)=RJ(1:ND)*FEDD(1:ND)*R(1:ND)*R(1:ND)*GAM_REL(1:ND)
+edd_jrel_var_v1.f:12:	1                  R,SIGMA,CHI,ESEC,FEDD,
+edd_jrel_var_v1.f:24:	REAL*8 FEDD(ND)
+edd_jrel_var_v1.f:177:	T1=  ( (FEDD(1)+VdHdR_TERM(1))*Q(1)*JNU(1)*GAM_RSQ(1) -
+edd_jrel_var_v1.f:178:	1      (FEDD(2)+VdHdR_TERM(2))*Q(2)*JNU(2)*GAM_RSQ(2) )/DTAU_H(1)/DTAU_H(1)
+edd_jrel_var_v1.f:191:	  T1= ( GAM_RSQ(ND)*(FEDD(ND)+VdHdR_TERM(ND))*JNU(ND) -
+edd_jrel_var_v1.f:192:	1          GAM_RSQ(ND-1)*(FEDD(ND-1)+VdHdR_TERM(ND-1))*Q(ND-1)*JNU(ND-1) )
+edd_jrel_var_v1.f:199:	  T1= ( GAM_RSQ(ND)*(FEDD(ND)+VdHdR_TERM(ND))*JNU(ND) -
+edd_jrel_var_v1.f:200:	1           GAM_RSQ(ND-1)*(FEDD(ND-1)+VdHdR_TERM(ND-1))*Q(ND-1)*JNU(ND-1) )
+edd_jrel_var_v2.f:12:	1                  R,SIGMA,CHI,ESEC,FEDD,
+edd_jrel_var_v2.f:24:	REAL*8 FEDD(ND)
+edd_jrel_var_v2.f:177:	T1=  ( (FEDD(1)+VdHdR_TERM(1))*Q(1)*JNU(1)*GAM_RSQ(1) -
+edd_jrel_var_v2.f:178:	1      (FEDD(2)+VdHdR_TERM(2))*Q(2)*JNU(2)*GAM_RSQ(2) )/DTAU_H(1)/DTAU_H(1)
+edd_jrel_var_v2.f:191:	  T1= ( GAM_RSQ(ND)*(FEDD(ND)+VdHdR_TERM(ND))*JNU(ND) -
+edd_jrel_var_v2.f:192:	1          GAM_RSQ(ND-1)*(FEDD(ND-1)+VdHdR_TERM(ND-1))*Q(ND-1)*JNU(ND-1) )
+edd_jrel_var_v2.f:199:	  T1= ( GAM_RSQ(ND)*(FEDD(ND)+VdHdR_TERM(ND))*JNU(ND) -
+edd_jrel_var_v2.f:200:	1           GAM_RSQ(ND-1)*(FEDD(ND-1)+VdHdR_TERM(ND-1))*Q(ND-1)*JNU(ND-1) )
+edd_jrel_var_v3.f:12:	1                  R,SIGMA,CHI,ESEC,FEDD,dIBCHI_A,dIBCHI_B,
+edd_jrel_var_v3.f:25:	REAL*8 FEDD(ND)
+edd_jrel_var_v3.f:180:	T1=  ( (FEDD(1)+VdHdR_TERM(1))*Q(1)*JNU(1)*GAM_RSQ(1) -
+edd_jrel_var_v3.f:181:	1      (FEDD(2)+VdHdR_TERM(2))*Q(2)*JNU(2)*GAM_RSQ(2) )/DTAU_H(1)/DTAU_H(1)
+edd_jrel_var_v3.f:194:	  T1= ( GAM_RSQ(ND)*(FEDD(ND)+VdHdR_TERM(ND))*JNU(ND) -
+edd_jrel_var_v3.f:195:	1          GAM_RSQ(ND-1)*(FEDD(ND-1)+VdHdR_TERM(ND-1))*Q(ND-1)*JNU(ND-1) )
+edd_jrel_var_v3.f:203:	  T1 = GAM_RSQ(ND-1)*(FEDD(ND-1)+VdHdR_TERM(ND-1))*Q(ND-1)
+edd_jrel_var_v3.f:204:	  T2 = GAM_RSQ(ND)*(FEDD(ND)+VdHdR_TERM(ND))
+edd_jrel_var_v3.f:216:	  T1= ( GAM_RSQ(ND)*(FEDD(ND)+VdHdR_TERM(ND))*JNU(ND) -
+edd_jrel_var_v3.f:217:	1           GAM_RSQ(ND-1)*(FEDD(ND-1)+VdHdR_TERM(ND-1))*Q(ND-1)*JNU(ND-1) )
+fg_j_cmf_v11.f:201:	1                  JNU,FEDD,JQW,HQW,KQW,NQW,HMIDQW,NMIDQW,
+fg_j_cmf_v11.f:238:	REAL*8 FEDD(ND)
+fg_j_cmf_v11.f:1725:	  FEDD(I)=KNU_STORE(I)/JNU_STORE(I)
+fg_j_cmf_v12.f:201:	1                  JNU,FEDD,JQW,HQW,KQW,NQW,HMIDQW,NMIDQW,
+fg_j_cmf_v12.f:240:	REAL*8 FEDD(ND)
+fg_j_cmf_v12.f:1739:	  FEDD(I)=KNU_STORE(I)/JNU_STORE(I)
+fgrey_norel_v1.f:16:	SUBROUTINE FGREY_NOREL_V1(FEDD,H_ON_J,RJ,CHI,R,VEL,SIGMA,
+fgrey_norel_v1.f:27:	REAL*8 FEDD(ND)
+fgrey_norel_v1.f:232:	FEDD=FS_K/FS_J
+fgrey_norel_v1.f:251:	1                                RJ(I),FS_J(I),FS_H(I),FEDD(I),H_ON_J(I)
+fgrey_norel_v1.f:254:	1         (1.0D0+FEDD(1))/(1.0D0-BETA(1)*BETA(1)) )
+get_moms_non_rel.f:54:! Compute FEDD=K/J. Since J & K are always computed at the nodes,
+get_moms_rel.f:65:! Compute FEDD=K/J. Since J & K are always computed at the nodes,
+mod_var_jrel.f:19:        REAL*8, ALLOCATABLE :: FEDD_PREV(:)
+mod_var_jrel.f:106:          IF(IOS .EQ. 0)ALLOCATE (FEDD_PREV(ND),STAT=IOS)
+mod_var_jrel.f:186:        FEDD_PREV(:)=0.0D0
+mom_j_cmf_v8.f:651:	  CALL WRITE_VEC(K_ON_J,ND,'K_ON_J (FEDD) Vec',47)
+mom_j_rel_v2.f:24:        REAL*8, ALLOCATABLE :: FEDD_PREV(:)
+mom_j_rel_v2.f:33:        REAL*8, ALLOCATABLE :: FEDD_SAVE(:)
+mom_j_rel_v2.f:100:          IF(IOS .EQ. 0)ALLOCATE (FEDD_PREV(ND),STAT=IOS)
+mom_j_rel_v2.f:114:          IF(IOS .EQ. 0)ALLOCATE (FEDD_SAVE(ND),STAT=IOS)
+mom_j_rel_v2.f:167:        FEDD_SAVE(:)=0.0D0
+mom_j_rel_v2.f:231:	1		   H_ON_J,FEDD,N_ON_J,GEDD,RSQN_ON_RSQJ,KMID_ON_J,
+mom_j_rel_v2.f:256:	REAL*8 FEDD(ND)
+mom_j_rel_v2.f:338:	  FEDD_PREV(:)=0.0D0
+mom_j_rel_v2.f:385:          FEDD_PREV(:)=FEDD_SAVE(:)
+mom_j_rel_v2.f:465:	  TA(ND-I+1)=( 3.0D0*FEDD(I)-1.0D0+
+mom_j_rel_v2.f:468:	1       (BETA(I)*(1.0D0-FEDD(I)-VdHdR_TERM(I))-N_ON_J(I))
+mom_j_rel_v2.f:469:	1            )/(FEDD(I)+VdHdR_TERM(I))/R(I)
+mom_j_rel_v2.f:520:	  PSI(1)=DELTA(1)*( HBC-NBC+(NBC+BETA(1)*FEDD(1))*
+mom_j_rel_v2.f:523:	1             BETA(1)*FEDD_PREV(1))*
+mom_j_rel_v2.f:530:	1            (1.0D0+CON_dKdNU(I)*FEDD(I)+CON_dHdNU(I)*H_ON_J(I) )
+mom_j_rel_v2.f:532:	1            (1.0D0+CON_dKdNU(I)*FEDD_PREV(I)+
+mom_j_rel_v2.f:547:	  HU(I)=(FEDD(I+1)+VdHdR_TERM(I+1))*Q(I+1)/
+mom_j_rel_v2.f:549:	  HL(I)=(FEDD(I)+VdHdR_TERM(I))*Q(I)/
+mom_j_rel_v2.f:591:	  TC(1)=-( FEDD(2)+VdHdR_TERM(2) )*Q(2)/DTAU_H(1)
+mom_j_rel_v2.f:592:	  TB(1)= ( FEDD(1)+VdHdR_TERM(1) )*Q(1)/DTAU_H(1) + PSI(1) + HBC*P_H(1)
+mom_j_rel_v2.f:600:	  TA(ND)=-Q(ND-1)*(FEDD(ND-1)+VdHdR_TERM(ND-1))/DTAU_H(ND-1)
+mom_j_rel_v2.f:602:	    TB(ND)=(FEDD(ND)+VdHdR_TERM(ND))/DTAU_H(ND-1)
+mom_j_rel_v2.f:605:	    TB(ND)=(FEDD(ND)+VdHdR_TERM(ND))/DTAU_H(ND-1)+IN_HBC*GAM_REL(ND)
+mom_j_rel_v2.f:695:        FEDD_SAVE(:)=FEDD(:)
+mom_jrel_v3.f:25:        REAL*8, ALLOCATABLE :: FEDD_PREV(:)
+mom_jrel_v3.f:34:        REAL*8, ALLOCATABLE :: FEDD_SAVE(:)
+mom_jrel_v3.f:102:          IF(IOS .EQ. 0)ALLOCATE (FEDD_PREV(ND),STAT=IOS)
+mom_jrel_v3.f:116:          IF(IOS .EQ. 0)ALLOCATE (FEDD_SAVE(ND),STAT=IOS)
+mom_jrel_v3.f:169:        FEDD_SAVE(:)=0.0D0
+mom_jrel_v3.f:234:	1		FEDD,GEDD,H_ON_J,N_ON_J,RSQN_ON_RSQJ,KMID_ON_J,
+mom_jrel_v3.f:258:	REAL*8 FEDD(ND)			!J/K at nodes
+mom_jrel_v3.f:341:	  FEDD_PREV(:)=0.0D0
+mom_jrel_v3.f:393:          FEDD_PREV(:)=FEDD_SAVE(:)
+mom_jrel_v3.f:472:	  TA(ND-I+1)=( 3.0D0*FEDD(I)-1.0D0+
+mom_jrel_v3.f:475:	1       (BETA(I)*(1.0D0-FEDD(I)-VdHdR_TERM(I))-N_ON_J(I))
+mom_jrel_v3.f:476:	1            )/(FEDD(I)+VdHdR_TERM(I))/R(I)
+mom_jrel_v3.f:483:	    WRITE(147,'(I5,10ES14.4)')I,TB(ND-I+1),FEDD(I),H_ON_J(I),N_ON_J(I),TA(ND-I+1),Q(ND-I+1),
+mom_jrel_v3.f:500:	    WRITE(147,'(I5,10ES14.4)')I,FEDD(I),H_ON_J(I),N_ON_J(I),TA(I),Q(I),BETA(I),SIGMA(I),VdHdR_TERM(I)
+mom_jrel_v3.f:539:	  PSI(1)=DELTA(1)*( HBC-NBC+(NBC+BETA(1)*FEDD(1))*
+mom_jrel_v3.f:542:	1             BETA(1)*FEDD_PREV(1))*
+mom_jrel_v3.f:549:	1            (1.0D0+CON_dKdNU(I)*FEDD(I)+CON_dHdNU(I)*H_ON_J(I) )
+mom_jrel_v3.f:551:	1            (1.0D0+CON_dKdNU(I)*FEDD_PREV(I)+
+mom_jrel_v3.f:566:	  HU(I)=(FEDD(I+1)+VdHdR_TERM(I+1))*Q(I+1)/
+mom_jrel_v3.f:568:	  HL(I)=(FEDD(I)+VdHdR_TERM(I))*Q(I)/
+mom_jrel_v3.f:610:	  TC(1)=-( FEDD(2)+VdHdR_TERM(2) )*Q(2)/DTAU_H(1)
+mom_jrel_v3.f:611:	  TB(1)= ( FEDD(1)+VdHdR_TERM(1) )*Q(1)/DTAU_H(1) + PSI(1) + HBC*P_H(1)
+mom_jrel_v3.f:625:	    TA(ND)=-Q(ND-1)*(FEDD(ND-1)+VdHdR_TERM(ND-1))/DTAU_H(ND-1)
+mom_jrel_v3.f:626:	    TB(ND)=(FEDD(ND)+VdHdR_TERM(ND))/DTAU_H(ND-1)
+mom_jrel_v3.f:629:	    TA(ND)=-Q(ND-1)*(FEDD(ND-1)+VdHdR_TERM(ND-1))/DTAU_H(ND-1)
+mom_jrel_v3.f:630:	    TB(ND)=(FEDD(ND)+VdHdR_TERM(ND))/DTAU_H(ND-1)+IN_HBC*GAM_REL(ND)
+mom_jrel_v3.f:740:        FEDD_SAVE(:)=FEDD(:)
+mom_jrel_v4.f:20:	REAL*8, ALLOCATABLE ::  FEDD(:)			!J/K at nodes
+mom_jrel_v4.f:57:        REAL*8, ALLOCATABLE :: FEDD_PREV(:)
+mom_jrel_v4.f:66:        REAL*8, ALLOCATABLE :: FEDD_SAVE(:)
+mom_jrel_v4.f:123:	  IF(IOS .NE. 0)ALLOCATE (FEDD(ND,STAT=IOS)			!J/K at nodes
+mom_jrel_v4.f:163:          IF(IOS .EQ. 0)ALLOCATE (FEDD_PREV(ND),STAT=IOS)
+mom_jrel_v4.f:177:          IF(IOS .EQ. 0)ALLOCATE (FEDD_SAVE(ND),STAT=IOS)
+mom_jrel_v4.f:230:        FEDD_SAVE(:)=0.0D0
+mom_jrel_v4.f:295:	1		FEDD_SM,GEDD_SM,H_ON_J_SM,N_ON_J_SM,RSQN_ON_RSQJ_SM,KMID_ON_J_SM,
+mom_jrel_v4.f:317:	REAL*8 FEDD_SM(ND_SM)			!J/K at nodes
+mom_jrel_v4.f:475:	  FEDD_PREV(:)=0.0D0
+mom_jrel_v4.f:530:	  TA(1:ND)=LOG(FEDD_SM(1:ND)
+mom_jrel_v4.f:531:	  CALL MON_INTERP(FEDD,ND,IONE,R,ND,TA,ND_SM,R_SM,ND_SM)
+mom_jrel_v4.f:532:	  FEDD=EXP(FEDD)
+mom_jrel_v4.f:540:	  N_ON_J=EXP(FEDD)
+mom_jrel_v4.f:551:	  FEDD(1:ND)=FEDD_SM(1:ND)
+mom_jrel_v4.f:563:          FEDD_PREV(:)=FEDD_SAVE(:)
+mom_jrel_v4.f:642:	  TA(ND-I+1)=( 3.0D0*FEDD(I)-1.0D0+
+mom_jrel_v4.f:645:	1       (BETA(I)*(1.0D0-FEDD(I)-VdHdR_TERM(I))-N_ON_J(I))
+mom_jrel_v4.f:646:	1            )/(FEDD(I)+VdHdR_TERM(I))/R(I)
+mom_jrel_v4.f:697:	  PSI(1)=DELTA(1)*( HBC-NBC+(NBC+BETA(1)*FEDD(1))*
+mom_jrel_v4.f:700:	1             BETA(1)*FEDD_PREV(1))*
+mom_jrel_v4.f:707:	1            (1.0D0+CON_dKdNU(I)*FEDD(I)+CON_dHdNU(I)*H_ON_J(I) )
+mom_jrel_v4.f:709:	1            (1.0D0+CON_dKdNU(I)*FEDD_PREV(I)+
+mom_jrel_v4.f:724:	  HU(I)=(FEDD(I+1)+VdHdR_TERM(I+1))*Q(I+1)/
+mom_jrel_v4.f:726:	  HL(I)=(FEDD(I)+VdHdR_TERM(I))*Q(I)/
+mom_jrel_v4.f:768:	  TC(1)=-( FEDD(2)+VdHdR_TERM(2) )*Q(2)/DTAU_H(1)
+mom_jrel_v4.f:769:	  TB(1)= ( FEDD(1)+VdHdR_TERM(1) )*Q(1)/DTAU_H(1) + PSI(1) + HBC*P_H(1)
+mom_jrel_v4.f:783:	    TA(ND)=-Q(ND-1)*(FEDD(ND-1)+VdHdR_TERM(ND-1))/DTAU_H(ND-1)
+mom_jrel_v4.f:784:	    TB(ND)=(FEDD(ND)+VdHdR_TERM(ND))/DTAU_H(ND-1)
+mom_jrel_v4.f:787:	    TA(ND)=-Q(ND-1)*(FEDD(ND-1)+VdHdR_TERM(ND-1))/DTAU_H(ND-1)
+mom_jrel_v4.f:788:	    TB(ND)=(FEDD(ND)+VdHdR_TERM(ND))/DTAU_H(ND-1)+IN_HBC*GAM_REL(ND)
+mom_jrel_v4.f:898:        FEDD_SAVE(:)=FEDD(:)
+var_jrel_v1.f:35:	1                  FEDD,GEDD,H_ON_J,N_ON_J,RSQN_ON_RSQJ,KMID_ON_J,
+var_jrel_v1.f:72:	REAL*8 FEDD(ND)
+var_jrel_v1.f:128:	  FEDD_PREV(:)=0.0D0
+var_jrel_v1.f:182:	  WRITE(171,*)' FEDD',FEDD(1),FEDD(ND)
+var_jrel_v1.f:248:	  TA(ND-I+1)=( 3.0D0*FEDD(I)-1.0D0+
+var_jrel_v1.f:251:	1       (BETA(I)*(1.0D0-FEDD(I)-VdHdR_TERM(I))-N_ON_J(I))
+var_jrel_v1.f:252:	1            )/(FEDD(I)+VdHdR_TERM(I))/R(I)
+var_jrel_v1.f:314:	1            (1.0D0+CON_dKdNU(I)*FEDD(I)+CON_dHdNU(I)*H_ON_J(I) )
+var_jrel_v1.f:316:	1            (1.0D0+CON_dKdNU(I)*FEDD_PREV(I)+
+var_jrel_v1.f:323:	  HU(I)=GAM_RSQ(I+1)*(FEDD(I+1)+VdHdR_TERM(I+1))*Q(I+1)/(P_H(I)+W(I))/DTAU_H(I)
+var_jrel_v1.f:324:	  HL(I)=GAM_RSQ(I)*(FEDD(I)+VdHdR_TERM(I))*Q(I)/(P_H(I)+W(I))/DTAU_H(I)
+var_jrel_v1.f:359:	PSI(1)=GAM_RSQ(1)*DELTA(1)*( HBC-NBC+(NBC+BETA(1)*FEDD(1))*
+var_jrel_v1.f:362:	1             BETA(1)*FEDD_PREV(1))*GAM_REL_SQ(1)*(SIGMA(1)+1.0D0) )
+var_jrel_v1.f:365:	TC(1)= -GAM_RSQ(2)*( FEDD(2)+VdHdR_TERM(2) )*Q(2)/DTAU_H(1)
+var_jrel_v1.f:366:	TB(1)=  GAM_RSQ(1)*( FEDD(1)+VdHdR_TERM(1) )*Q(1)/DTAU_H(1) + 
+var_jrel_v1.f:381:	  TA(ND)=-GAM_RSQ(ND-1)*Q(ND-1)*(FEDD(ND-1)+VdHdR_TERM(ND-1))/DTAU_H(ND-1)
+var_jrel_v1.f:382:	  TB(ND)=GAM_RSQ(ND)*(FEDD(ND)+VdHdR_TERM(ND))/DTAU_H(ND-1)
+var_jrel_v1.f:385:	  TA(ND)=-GAM_RSQ(ND-1)*Q(ND-1)*(FEDD(ND-1)+VdHdR_TERM(ND-1))/DTAU_H(ND-1)
+var_jrel_v1.f:386:	  TB(ND)=GAM_RSQ(ND)*(FEDD(ND)+VdHdR_TERM(ND))/DTAU_H(ND-1)+IN_HBC*GAM_RSQ(ND)
+var_jrel_v1.f:477:	1          R,SIGMA,CHI,ESEC,FEDD,
+var_jrel_v1.f:554:        FEDD_PREV(:)=FEDD(:)

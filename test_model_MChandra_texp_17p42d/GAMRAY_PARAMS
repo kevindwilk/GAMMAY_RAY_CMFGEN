@@ -1,0 +1,34 @@
+! First part of the file are parameters for the frequency grid
+
+30000             [NU_GRID_MAX]              ! Maximum number of gamma-ray frequency points to set up grid
+8                 [CHEB_ORDER]               ! Order of sum for chebyshev integration
+3.8D0             [NU_MAX]                   ! Maximum energy (MeV) to begin photon grid 
+1.0D-3            [NU_MIN]                   ! Minimum energy (MeV) to end photon grid 
+2.0D+2            [V_GAUSS]                  ! Gaussian width for setting up intrinsic emission of decay lines
+3.0D+1            [V_LINE]                   ! Velocity step size across the decay line profile
+8.5D+1            [V_TAIL]                   ! Velocity step size of first half of red tail for all decay lines
+1.75D+2           [V_INF]                    ! Velocity step to the end of red compton tail
+2.0D+2            [V_BETWEEN]                ! Velocity for frequency step size between decay lines
+3.0D+2            [V_END]                    ! Velocity step size after last line until EGAM_MIN
+25.0D0            [BLUE_GAUSS]               ! Gaussian widths to consider start of line
+25.0D0            [RED_GAUSS]                ! Gaussian widths to consider end of line
+2                 [ANG_MULT]                 ! Responsible for adding extra mu interpolating points for scattering
+2                 [GAM_IT]                   ! Number of lambda iterations to solve the comoving transfer equation
+T                 [NORM_GAM]                 ! Normalize gamma-ray line prob. to energy per decay
+F                 [NORM_LINES_ONLY]          ! Normalize lines only (T) or total Qgam (F) 
+0.05D0            [TAIL_SPLIT_FRAC]          ! Factor to split NU_RED_INF1(2) (i.e. how close to make tail to line center)
+
+F                 [TEST_NU_GRID]             ! Test variable to see number of points at each step
+F                 [USE_MIN_PTS_GRAY_LINES]   ! Logical to set up minimum number of points per line 
+200               [GRAY_LINE_MIN]            ! Minimum frequency points across line profile (and tail points for low Egam)
+9000              [GRAY_TAIL_MIN1]           ! Minimum frequency points across compton tail of profile for E>1000 keV
+9000              [GRAY_TAIL_MIN2]           ! Minimum frequency points across compton tail of profile for 1000>E>500 keV
+9000              [GRAY_TAIL_MIN3]           ! Minimum frequency points across compton tail of profile for 500>E>100 keV
+9000              [GRAY_TAIL_MIN4]           ! Minimum frequency points across compton tail of profile for 500>E>100 keV
+1500              [GRAY_END_MIN]             ! Minimum frequency points to finish to end of EGAM grid.
+
+! Parameters to use for the radiative transfer routines. 
+
+ZERO_FLUX         [IB_METH]                  ! Inner band method for gamma-ray routine (use ZERO_FLUX or HOLLOW)
+T                 [FULL_REL_OBS]             ! Use full relativistic treatment for observer's frame spectrum
+F                 [DO_NORM_ETA]              ! Norm emissivity for number of photons?

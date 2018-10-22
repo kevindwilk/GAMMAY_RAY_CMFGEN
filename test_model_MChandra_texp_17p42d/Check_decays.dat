@@ -1,0 +1,173 @@
+  
+  1  NICK          55.9421
+        Energy       Prob.
+ 1      0.1580      0.9880
+ 2      0.2700      0.3650
+ 3      0.4800      0.3650
+ 4      0.7500      0.4950
+ 5      0.8120      0.8600
+ 6      1.5620      0.1400
+Tot. Line En: 1.7181
+Line En + KE: 1.7181
+Energy/decay: 1.7183
+  
+  2  COB           55.9398
+        Energy       Prob.
+ 1      0.5110      0.3800
+ 2      0.8470      1.0000
+ 3      0.9770      0.0140
+ 4      1.0380      0.1400
+ 5      1.1750      0.0230
+ 6      1.2380      0.6760
+ 7      1.3600      0.0430
+ 8      1.7710      0.1570
+ 9      2.0150      0.0310
+10      2.0350      0.0790
+11      2.5980      0.1730
+12      3.0100      0.0100
+13      3.2020      0.0320
+14      3.2530      0.0790
+15      3.2730      0.0190
+Tot. Line En: 3.5250
+Line En + KE: 3.6409
+Energy/decay: 3.7489
+  
+  3  NICK          56.9398
+        Energy       Prob.
+ 1      0.1272      0.1670
+ 2      0.5110      0.8700
+ 3      1.3776      0.8170
+ 4      1.7575      0.0575
+ 5      1.9195      0.1226
+Tot. Line En: 1.9277
+Line En + KE: 2.0822
+Energy/decay: 2.0913
+  
+  4  COB           56.9363
+        Energy       Prob.
+ 1      0.0144      0.0916
+ 2      0.1221      0.8560
+ 3      0.1365      0.1068
+Tot. Line En: 0.1204
+Line En + KE: 0.1204
+Energy/decay: 0.1218
+  
+  5  CHRO          47.9540
+        Energy       Prob.
+ 1      0.1124      0.9600
+ 2      0.3083      1.0000
+ 3      0.5110      0.0320
+Tot. Line En: 0.4326
+Line En + KE: 0.4341
+Energy/decay: 0.4340
+  
+  6  VAN           47.9523
+        Energy       Prob.
+ 1      0.5110      0.9980
+ 2      0.9441      0.0776
+ 3      0.9835      0.9998
+ 4      1.3121      0.9750
+ 5      2.2404      0.0241
+Tot. Line En: 2.8998
+Line En + KE: 3.0447
+Energy/decay: 3.0553
+  
+  7  CHRO          48.9513
+        Energy       Prob.
+ 1      0.0623      0.1640
+ 2      0.0906      0.5320
+ 3      0.1529      0.3030
+ 4      0.5110      1.8600
+Tot. Line En: 1.0552
+Line En + KE: 1.6530
+Energy/decay: 1.6530
+  
+  8  VAN           48.9485
+        Energy       Prob.
+ 1      0.5110      0.0000
+Tot. Line En: 0.0000
+Line En + KE: 0.0000
+Energy/decay: 0.0000
+  
+  9  MAN           50.9482
+        Energy       Prob.
+ 1      0.5110      1.9417
+Tot. Line En: 0.9922
+Line En + KE: 1.9256
+Energy/decay: 1.9256
+  
+ 10  CHRO          50.9448
+        Energy       Prob.
+ 1      0.3201      0.0991
+Tot. Line En: 0.0317
+Line En + KE: 0.0317
+Energy/decay: 0.0317
+  
+ 11  COB           54.9420
+        Energy       Prob.
+ 1      0.4772      0.2020
+ 2      0.5110      1.5200
+ 3      0.9311      0.7500
+ 4      1.3166      0.0710
+ 5      1.3700      0.0290
+ 6      1.4085      0.1690
+Tot. Line En: 1.9427
+Line En + KE: 2.3731
+Energy/decay: 2.3730
+  
+ 12  IRON          54.9383
+        Energy       Prob.
+ 1      0.5110      0.0000
+Tot. Line En: 0.0000
+Line En + KE: 0.0000
+Energy/decay: 0.0000
+  
+ 13  POT           36.9734
+        Energy       Prob.
+ 1      0.5110      1.9980
+ 2      2.7960      0.0180
+ 3      3.6010      0.0002
+Tot. Line En: 1.0720
+Line En + KE: 3.4193
+Energy/decay: 3.4193
+  
+ 14  ARG           36.9668
+        Energy       Prob.
+ 1      0.0026      0.0550
+Tot. Line En: 0.0001
+Line En + KE: 0.0001
+Energy/decay: 0.0001
+  
+ 15  IRON          51.9481
+        Energy       Prob.
+ 1      0.1687      0.9920
+ 2      0.3777      0.0164
+ 3      0.5110      1.1200
+Tot. Line En: 0.7459
+Line En + KE: 0.9366
+Energy/decay: 0.9421
+  
+ 16  MAN           51.9456
+        Energy       Prob.
+ 1      0.5110      1.9000
+ 2      1.4341      0.9830
+ 3      2.9650      0.0100
+ 4      3.1290      0.0100
+Tot. Line En: 2.4416
+Line En + KE: 3.5546
+Energy/decay: 3.5604
+  
+ 17  TIT           43.9597
+        Energy       Prob.
+ 1      0.5110      0.0000
+Tot. Line En: 0.0000
+Line En + KE: 0.0000
+Energy/decay: 0.0000
+  
+ 18  SCAN          43.9594
+        Energy       Prob.
+ 1      0.5110      1.8854
+ 2      1.1570      0.9990
+Tot. Line En: 2.1193
+Line En + KE: 2.7151
+Energy/decay: 2.7317

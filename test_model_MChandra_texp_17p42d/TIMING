@@ -1,0 +1,17 @@
+  
+ Overhead is     0.000000000000000     
+    Count rate for wall clock is                 10000000
+ Maximum count for wall clock is      9223372036854775807
+  
+        Identifier           Elapsed             CPU
+                               Time              Time
+     MAX_BW_EXT                 0.022516         0.110077
+     MAX_B_EXT                 53.038976       423.006531
+     MAX_O_EXT                 64.967915       519.853455
+     T_ITERATE                  0.000011         0.000000
+     ISO EMISSION              15.490902       123.999878
+     CMF_FORMAL SOLVER         22.984952       179.434448
+     FG_SOLVE                   9.702031        76.396240
+     JVAL                       6.821824        53.092285
+     FGP_SAVE                   2.235721        17.612305
+     Gamma scat full        60862.772128    487183.318481

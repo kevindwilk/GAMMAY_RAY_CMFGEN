@@ -1,0 +1,7 @@
+0                      [N_ITS]
+20                     [STRT_ITS]
+10                     [FREQ_ITS]
+TAU_SPACE              [GRID_METH]
+REFINE                 [GRID_TYPE]
+-1.0D0                 [FG_MIN]
++1.5D0                 [FG_MAX]

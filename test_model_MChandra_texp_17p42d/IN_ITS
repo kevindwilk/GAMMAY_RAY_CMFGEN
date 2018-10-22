@@ -1,0 +1,6 @@
+2              [NUM_ITS]               !Numer of iterations?
+F              [DO_LAM_IT]             !Do lambda iterations?
+T              [DO_LAM_AUTO]           !Switch automatically from lambda its.
+T              [DO_T_AUTO]             !Automatically switch to variable T
+F              [DO_GT_AUTO]            !
+F              [D2_EQ_D1]              !Only for testing

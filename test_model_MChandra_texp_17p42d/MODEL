@@ -1,0 +1,3146 @@
+
+
+ Model Started on:               05-Dec-2017 13:58:42
+ Main program last changed on:   17-Oct-2016 
+
+          109     !Number of depth points
+           15     !Number of core rays
+          124     !Total number of rays
+         2439     !Total number of variables
+       140000     !Maximum number of frequencies
+            1     !Number of bands
+
+ Species          N_F   N_S      Z      Gion     Mass      At.    No.    Eqn.
+                                        (gs)               No.   Phot.    No.
+ 
+ CI                26    14     1.0      2.0     12.0      6.0      1       1
+ C2                26    14     2.0      1.0     12.0      6.0      2      15
+ CIII             112    62     3.0      2.0     12.0      6.0      2      29
+ CIV               64    59     4.0      1.0     12.0      6.0      1      91
+ 
+ OI                51    21     1.0      4.0     16.0      8.0      2     151
+ O2               123    54     2.0      1.0     16.0      8.0      1     172
+ OIII              86    44     3.0      2.0     16.0      8.0      1     226
+ OIV               77    37     4.0      1.0     16.0      8.0      1     270
+ 
+ NeI              155    78     1.0      4.0     20.2     10.0      1     308
+ Ne2               91    22     2.0      5.0     20.2     10.0      1     386
+ NeIII             80    32     3.0      4.0     20.2     10.0      1     408
+ 
+ NaI               71    22     1.0      1.0     23.0     11.0      1     441
+ 
+ Mg2               80    31     2.0      1.0     24.3     12.0      1     464
+ MgIII             99    31     3.0      6.0     24.3     12.0      1     495
+ 
+ Al2               44    26     2.0      2.0     27.0     13.0      1     527
+ AlIII             60    27     3.0      1.0     27.0     13.0      1     553
+ 
+ Sk2               59    31     2.0      1.0     28.1     14.0      1     581
+ SkIII             61    33     3.0      2.0     28.1     14.0      1     612
+ SkIV              48    37     4.0      1.0     28.1     14.0      1     645
+ 
+ S2               324    56     2.0      1.0     32.1     16.0      1     683
+ SIII              98    48     3.0      2.0     32.1     16.0      1     739
+ SIV               67    27     4.0      1.0     32.1     16.0      1     787
+ 
+ ClIV               1     1     4.0      6.0     35.5     17.0      1     815
+ 
+ ArI              110    56     1.0      4.0     39.9     18.0      1     817
+ Ar2              415   134     2.0      5.0     39.9     18.0      1     873
+ ArIII            346    32     3.0      4.0     39.9     18.0      1    1007
+ 
+ KIII               1     1     3.0      9.0     39.1     19.0      1    1040
+ 
+ Ca2               77    21     2.0      1.0     40.1     20.0      1    1042
+ CaIII             40    16     3.0      4.0     40.1     20.0      1    1063
+ CaIV              69    18     4.0      9.0     40.1     20.0      1    1079
+ 
+ Sc2               85    38     2.0      4.0     45.0     21.0      1    1098
+ ScIII             45    25     3.0      1.0     45.0     21.0      1    1136
+ 
+ Tk2              152    37     2.0      5.0     47.9     22.0      1    1162
+ TkIII            206    33     3.0     10.0     47.9     22.0      1    1199
+ 
+ VI                 1     1     1.0      1.0     50.9     23.0      1    1233
+ 
+ Cr2              196    28     2.0      1.0     52.0     24.0      1    1235
+ CrIII            145    30     3.0      4.0     52.0     24.0      1    1263
+ CrIV             234    29     4.0     21.0     52.0     24.0      1    1293
+ 
+ Mn2               97    25     2.0      6.0     54.9     25.0      1    1323
+ MnIII            175    30     3.0     25.0     54.9     25.0      1    1348
+ 
+ FeI              136    44     1.0     10.0     55.8     26.0      1    1379
+ Fe2              827   275     2.0      9.0     55.8     26.0      1    1423
+ FeIII           1001    96     3.0      6.0     55.8     26.0      1    1698
+ FeIV            1000   100     4.0      1.0     55.8     26.0      1    1794
+ FeV              191    47     5.0     28.0     55.8     26.0      1    1894
+ 
+ Co2             1005   112     2.0     10.0     58.9     27.0      1    1942
+ CoIII           1075    88     3.0      9.0     58.9     27.0      1    2054
+ CoIV            1000    56     4.0      6.0     58.9     27.0      1    2142
+ CoV              387    32     5.0     25.0     58.9     27.0      1    2198
+ 
+ Nk2             1000    59     2.0      9.0     58.7     28.0      1    2231
+ NkIII           1000    47     3.0     10.0     58.7     28.0      1    2290
+ NkIV            1000    54     4.0      9.0     58.7     28.0      1    2337
+ NkV              183    46     5.0      6.0     58.7     28.0      1    2391
+ 
+
+            2     [NUM_ITS]            Number of iterations to perform
+            F     [DO_LAM_IT]          Do LAMBDA iterations ?
+            T     [DO_LAM_AUTO]        Start non-lambda iterations automatically?
+            F     [DO_GT_AUTO]         Do a grey temperature iteration after revising USE_FIXED_J?
+            T     [DO_T_AUTO]          Allow temperature to vary when sufficent convergence has been obtained?
+            F     [D2_EQ_D1]           Replace pops at depth 2 with those at depth 1 for non-LAMBDA it?
+
+  1.39375E+04     [RSTAR]              Stellar radius (in 10^10 cm)
+  4.91705E+01     [RMAX]               Maximum radius (in R*)
+           11     [VEL_LAW]            Velocity Law to be used
+  2.16840E+04     [VINF]               Terminal velocity (km/s)
+  1.00000E-06     [LSTAR]              Stellar luminosity (Lsun)
+  1.50000E+01     [MASS]               Stellar mass (Msun)
+            F     [DO_CL]              Calculate a model with clumping?
+       EXPO       [CL_LAW]             Which clumping law is being utilized?
+            2     [N_CL_PAR]           Number of clumping parameters
+  1.00000E-01     [CL_PAR_1]           Clumping parameters:
+  2.00000E+02     [CL_PAR_2]           Clumping parameters:
+            T     [REV_RGRID]          Automatically revise R grid?
+            F     [JG_W_V]             Include V terms when computing Grey temperature?
+            T     [DO_DDT]             Include comoving derivative in SE equations?
+  3.40000E+01     [TS_NO]              Time sequence number: 1 for inital model
+  1.74214E+01     [SN_AGE]             Age of SN in days
+            T     [PURE_HUB]           Force a pre hubble flow using age and radii of SN?
+            T     [INC_RAD_DECAYS]     Allow for radiactive decays
+            T     [TRT_NON_TE]         Treat non-thermal electrons
+           10     [NT_IT_CNTRL]        Controls how often we update the non-thermal electron distiution
+   USE_HYDRO      [SN_T_OPT]           Method to get T with non-GRID option (USE_T_IN or USE_HYDRO)
+   ABS_TRANS      [GAMRAY_TRANS]       NONLOCAL or LOCAL gamma-ray enegry transport
+  6.00000E-02     [GAM_ABS_FAC]        Grey opacity factor for Swartz+95
+            5     [N_OB_INS]           # of points for fine grid at outer boundary
+            T     [REL_OBS]            Include all reltivistic terms in observer's frame solution
+            T     [REL_CMF]            Include all reltivistic terms in CMF solution for observed intensity
+            F     [OLD_MFS]            Use old mass scaling when reading SN_HYDRO_DATA
+  1.00000E+01     [HYD/X]              HYD/X fractional abundance by number (un-normalized)
+  1.00000E+00     [HE/X]               HE/X fractional abundance by number (un-normalized)
+  4.00000E-01     [CARB/X]             CARB/X fractional abundance by number (un-normalized)
+  3.00000E-04     [NIT/X]              NIT/X fractional abundance by number (un-normalized)
+  1.00000E-01     [OXY/X]              OXY/X fractional abundance by number (un-normalized)
+ -1.74000E-02     [NEON/X]             NEON/X fractional abundance by number (un-normalized)
+ -3.45000E-05     [SOD/X]              SOD/X fractional abundance by number (un-normalized)
+ -6.47000E-04     [MAG/X]              MAG/X fractional abundance by number (un-normalized)
+ -5.58000E-05     [ALUM/X]             ALUM/X fractional abundance by number (un-normalized)
+ -6.99000E-04     [SIL/X]              SIL/X fractional abundance by number (un-normalized)
+ -6.12000E-06     [PHOS/X]             PHOS/X fractional abundance by number (un-normalized)
+ -3.82000E-04     [SUL/X]              SUL/X fractional abundance by number (un-normalized)
+ -7.87000E-06     [CHL/X]              CHL/X fractional abundance by number (un-normalized)
+ -1.02000E-04     [ARG/X]              ARG/X fractional abundance by number (un-normalized)
+ -3.61000E-06     [POT/X]              POT/X fractional abundance by number (un-normalized)
+ -6.44000E-05     [CAL/X]              CAL/X fractional abundance by number (un-normalized)
+ -3.97000E-08     [SCAN/X]             SCAN/X fractional abundance by number (un-normalized)
+ -3.28000E-06     [TIT/X]              TIT/X fractional abundance by number (un-normalized)
+ -1.00000E-06     [VAN/X]              VAN/X fractional abundance by number (un-normalized)
+ -1.70000E-05     [CHRO/X]             CHRO/X fractional abundance by number (un-normalized)
+ -9.44000E-06     [MAN/X]              MAN/X fractional abundance by number (un-normalized)
+ -1.36000E-03     [IRON/X]             IRON/X fractional abundance by number (un-normalized)
+ -3.43000E-06     [COB/X]              COB/X fractional abundance by number (un-normalized)
+ -7.32000E-05     [NICK/X]             NICK/X fractional abundance by number (un-normalized)
+ -1.30000E-08     [BAR/X]              BAR/X fractional abundance by number (un-normalized)
+
+            F     [RD_CF_FILE]         Read in continuum frequencies from file
+  3.00000E-03     [MIN_CF]             Minimum continuum frequency if calculating NU
+  1.00000E+03     [MAX_CF]             Maximum continuum frequency if calculating NU
+  1.10000E+00     [FRAC_SP]            Fractional spacing for small frequencies
+  1.05000E+00     [AMP_FAC]            Amplification factor for large frequency ranges
+  1.00000E-01     [MAX_BF]             Maximum frequency spacing close to bf edge
+            T     [DO_DIS]             Allow for level dissolution of upper levels?
+  2.00000E+02     [dV_LEV]             Spacing (in km/s) on low side of bf edge for level dissolution
+  1.40000E+00     [AMP_DIS]            Amplification factor on low side bf edge
+  1.00000E-01     [MIN_DIS]            Minimum frequency for level dissolution
+
+            F     [CROSS]              Compute all photoionization cross-sections?
+  7.50000E+02     [V_CROSS]            Max. vel. sep. (km/s) between evaluations of all  phot. cross-sections?
+            F     [DIE_AS_LINE]        Treat the dielectronic transitions as individual lines?
+  1.00000E+03     [VSM_DIE]            Velocity (km/s) for smoothing dielectronic transitions
+  3.00000E+03     [SIG_GAU_KMS]        Sigma of Gaussian used to smooth photoionization data
+  5.00000E-01     [EXT_LINE_VAR]       Extent of line variation zone (V/INF) beyondthe resonancze zone
+  1.00000E-02     [ZNET_VAR_LIM]       Include lines in full varaition when  ABS(ZNET-1) > ZNET_VAR_LIM
+            T     [WNET]               Use Lambda iteration for weak lines?
+  1.00000E-03     [WK_LIM]             Maximum opacity ratio for weak lines (0.01)?
+            F     [DIF]                Use Diffusion approximation at inner boundary ?
+    ZERO_FLUX     [IB_METH]            Inner boundary method (DIFUSION, HOLLOW, or ZERO_FLUX)
+            T     [COH_ES]             Assume coherent electron scattering?
+            F     [OLD_J]              Use old file to provide initial estimate of J_ES?
+            F     [MIX_COH]            Mix coherent/non-coherent e.s. in linearization?
+  1.00000E-01     [ES_FAC]             Fractional proximity of RJ and RJ_ES for coherent variation
+       LOGMON     [METHOD]             Which method for continuum tau loglog, loglin, linear or zero ?
+       N_ON_J     [N_TYPE]             Method for to handle N for MOM_J_CMF -- N_ON_J, MIXED, or G_ONLY
+   INT/INS        [FG_OPT]             Solution options for FG_J_CMF: DIFF/INS and INT/INS
+  2.00000E+04     [VFRAC_FG]           Maximum velocity spacing (Doppler units) in FG_J_CMF_V10
+  2.00000E+04     [VFRAC_MOM]          Maximum velocity spacing (Doppler units) in MOM_J_CMF_V10
+            F     [THK_CONT]           Use thick boundary condition for continuum ?
+            T     [TRAP_J]             Use trapazoidal weights to compute J?
+
+  4.00000E+00     [TDOP]               Temperature to be used in Doppler profile (10^4K)
+  1.00000E+10     [AMASS_DOP]          Atomic mass to be used in Doppler profile (amu's)
+  5.00000E+01     [VTURB]              Turbulent velocity to be used in Doppler profile (km/s)
+
+  6.00000E+00     [MAX_DOP]            Maximum half-width of resonance zone (in Doppler widths)
+  1.00000E+00     [FRAC_DOP]           Spacing in resonance zone (in Doppler widths)
+  2.00000E+02     [dV_CMF_PROF]        Spacing across cmf profile (in km/s)
+  3.00000E+02     [dV_CMF_WING]        Spacing across e.s. wings of cmf profile(in km/s)
+  2.50000E+03     [ES_WING_EXT]        Extent of BLUE e.s. wings from resonance core (in km/s)
+  3.00000E+00     [R_CMF_WING_EXT]     Extent of RED e.s. wings from RESONANCE core (in Vinf)
+
+  1.10000E+00     [OBS_EXT_RAT]        Half width of profile in Vinf.
+  1.00000E+02     [dV_OBS_PROF]        Spacing across observed profile (in km/s)
+  4.00000E+02     [dV_OBS_WING]        Spacing across e.s. wings of observed profile(in km/s)
+  2.00000E+03     [dV_OBS_BIG]         Frequency spacing between lines (in km/s)
+
+            F     [USE_FIXED_J]        Use previously computed J to evaluate ALL rates?
+            F     [FLUX_CAL_ONLY]      Compute the observers frame flux only ?
+            F     [EXT_FRM_SOL]        Extrapolate the formal solution to larger radii?
+            T     [INS_F_FRM_SOL]      Insert extra frequencies for formal solution?
+   INT            [FRM_OPT]            Solution options for CMF_FORM_SOL
+            F     [DO_SOB_LINES]       Compute Sobolev rates and EWs for flux calculation?
+            F     [SOB_FREQ_IN_OBS]     Allow for SOB & CMF lines in defining observers frequencies?
+            F     [VERBOSE_OUT]        Switch on enhanced diagnostic output
+
+       BLANK      [GLOBAL_LINE]        Global switch to indicate handeling of line
+            F     [LAM_SET]            Set long wavelengths to SOBOLEV approximation
+  0.00000E+00     [F_LAM_BEG]          Inital wavelength (A) for blanketed flux calculation
+  7.00000E+03     [F_LAM_END]          Final wavelength (A) for blanketed flux calculation
+  1.00000E-03     [GF_CUT]             gf value to omit transitions
+  1.00000E+01     [AT_CUT]             Only omit transitions if AT_NO >= AT_CUT
+            9     [GF_LEV_CUT]         Level above whit transitions omitted if gf < GF_CUT
+            9     [MIN_TRANS]          Minimum number of transitions from each level
+            T     [THK_LINE]           Use thick boundary condition for lines?
+            T     [CHK_L_POS]          Ensure Line opacity is positive (SOB & CMF modes only)?
+   ESEC_CHK       [NEG_OPAC_OPT]       Method for negative opacities in BLANKETING mode
+            F     [He2_RES=0]          Set rates in He2 resonance lines to zero ?
+            F     [ALLOW_OL]           Allow for overlap of close lines (SOB only) ?
+  5.00000E+01     [OL_DIF]             Max. difference (in km/s) for overlap
+            T     [INC_CHG]            Include charge exchange reactions?
+            T     [INC_TWO]            Include two photon transitions?
+            F     [INC_PEN]            Include Penning ionization?
+            T     [INC_RAY]            Include opacity due to Rayleigh scattering?
+            F     [INC_ADV]            Include advection terms in rate equations?
+            T     [INC_AD]             Include adiabatic cooling in energy equation
+            T     [SCL_SL_OPAC]        Scale SL line opacities/emissivties for heating/cooling consistency?
+            F     [SCL_LN]             Scale line cooling rate for Rad. Eq. equation?
+  5.00000E-01     [SCL_LN_FAC]         Scale line cooling rate for Rad. Eq. equation?
+            T     [NEW_LINE_BA]        Use the new technique for comuting BA_T (i.e., dRE/dT)?
+            T     [INC_XRAYS]          Include X-ray emission
+            F     [FF_XRAYS]           Use free-free processes to compute X-ray emission
+            T     [X_SM_WIND]          Ignore clumping when computing X-ray emission
+  4.00000E+03     [VS_XRAYS]           X-ray smoothing width for SOB/CMF options
+  1.00000E-15     [FIL_FAC_1]          Filling factor for X-ray emission [1]
+  3.00000E+02     [T_SHOCK_1]          Shock T for X-ray emission [1]
+  1.20000E+04     [V_SHOCK_1]          Cut off velocity for X-ray emission [1]
+  1.00000E-15     [FIL_FAC_2]          Filling factor for X-ray emission [2]
+  6.00000E+02     [T_SHOCK_2]          Shock T for X-ray emission [2]
+  2.00000E+04     [V_SHOCK_2]          Cut off velocity for X-ray emission [2]
+            F     [XSLOW]              Add X-rays by slowly increasing filling factors?
+  1.00000E-25     [XFI1_BEG]           Initial filling factor for X-ray emission [1]
+  1.00000E-25     [XFI2_BEG]           Initial filling factor for X-ray emission [2]
+  1.00000E+02     [XSCL_FAC]           Rate to increase X-ray filling factor
+
+
+            T     [RD_IN_R_GRID]       Read in a predetermined R grid ?
+            T     [LIN_INT]            Use direct linear interpolation if  new model ?
+   R              [DC_METH]            Interpolation method: ED, R, LTE, SPH_TAU
+            F     [LTE_EST]            Use LTE for the initial estimates
+            T     [POP_SCALE]          Scale populations so that cons. Eq. satisfied ?
+  1.00000E+01     [T_INIT_TAU]         Tau above which T is set exactly to T(spherical)
+            F     [IT_ON_T]            Improve initial T estimate by iteration ?
+  5.00000E+00     [GREY_TAU]           SpecifysTau above which T is set to TGREY in iterative process
+
+          F,F     [DIE_CI]             Include (?) LTDR AUOT, WI calc.s for CI
+          F,F     [DIE_C2]             Include (?) LTDR AUOT, WI calc.s for C2
+          F,T     [DIE_CIII]           Include (?) LTDR AUOT, WI calc.s for CIII
+          F,F     [DIE_CIV]            Include (?) LTDR AUOT, WI calc.s for CIV
+          F,F     [DIE_CV]             Include (?) LTDR AUOT, WI calc.s for CV
+          F,F     [DIE_OI]             Include (?) LTDR AUOT, WI calc.s for OI
+          F,F     [DIE_O2]             Include (?) LTDR AUOT, WI calc.s for O2
+          F,F     [DIE_OIII]           Include (?) LTDR AUOT, WI calc.s for OIII
+          F,F     [DIE_OIV]            Include (?) LTDR AUOT, WI calc.s for OIV
+          T,T     [DIE_OV]             Include (?) LTDR AUOT, WI calc.s for OV
+          F,F     [DIE_NeI]            Include (?) LTDR AUOT, WI calc.s for NeI
+          F,F     [DIE_Ne2]            Include (?) LTDR AUOT, WI calc.s for Ne2
+          F,F     [DIE_NeIII]          Include (?) LTDR AUOT, WI calc.s for NeIII
+          F,F     [DIE_NeIV]           Include (?) LTDR AUOT, WI calc.s for NeIV
+          F,F     [DIE_NaI]            Include (?) LTDR AUOT, WI calc.s for NaI
+          F,F     [DIE_Na2]            Include (?) LTDR AUOT, WI calc.s for Na2
+          F,F     [DIE_Mg2]            Include (?) LTDR AUOT, WI calc.s for Mg2
+          F,F     [DIE_MgIII]          Include (?) LTDR AUOT, WI calc.s for MgIII
+          F,F     [DIE_MgIV]           Include (?) LTDR AUOT, WI calc.s for MgIV
+          F,F     [DIE_Al2]            Include (?) LTDR AUOT, WI calc.s for Al2
+          F,F     [DIE_AlIII]          Include (?) LTDR AUOT, WI calc.s for AlIII
+          F,F     [DIE_Sk2]            Include (?) LTDR AUOT, WI calc.s for Sk2
+          F,F     [DIE_SkIII]          Include (?) LTDR AUOT, WI calc.s for SkIII
+          F,F     [DIE_SkIV]           Include (?) LTDR AUOT, WI calc.s for SkIV
+          F,F     [DIE_SkV]            Include (?) LTDR AUOT, WI calc.s for SkV
+          F,F     [DIE_S2]             Include (?) LTDR AUOT, WI calc.s for S2
+          F,F     [DIE_SIII]           Include (?) LTDR AUOT, WI calc.s for SIII
+          F,F     [DIE_SIV]            Include (?) LTDR AUOT, WI calc.s for SIV
+          F,F     [DIE_SV]             Include (?) LTDR AUOT, WI calc.s for SV
+          F,F     [DIE_ClIV]           Include (?) LTDR AUOT, WI calc.s for ClIV
+          F,F     [DIE_ClV]            Include (?) LTDR AUOT, WI calc.s for ClV
+          F,F     [DIE_ArI]            Include (?) LTDR AUOT, WI calc.s for ArI
+          F,F     [DIE_Ar2]            Include (?) LTDR AUOT, WI calc.s for Ar2
+          F,F     [DIE_ArIII]          Include (?) LTDR AUOT, WI calc.s for ArIII
+          F,F     [DIE_ArIV]           Include (?) LTDR AUOT, WI calc.s for ArIV
+          F,F     [DIE_KIII]           Include (?) LTDR AUOT, WI calc.s for KIII
+          F,F     [DIE_KIV]            Include (?) LTDR AUOT, WI calc.s for KIV
+          F,F     [DIE_Ca2]            Include (?) LTDR AUOT, WI calc.s for Ca2
+          F,F     [DIE_CaIII]          Include (?) LTDR AUOT, WI calc.s for CaIII
+          F,F     [DIE_CaIV]           Include (?) LTDR AUOT, WI calc.s for CaIV
+          F,F     [DIE_CaV]            Include (?) LTDR AUOT, WI calc.s for CaV
+          T,F     [DIE_Sc2]            Include (?) LTDR AUOT, WI calc.s for Sc2
+          F,F     [DIE_ScIII]          Include (?) LTDR AUOT, WI calc.s for ScIII
+          F,F     [DIE_Tk2]            Include (?) LTDR AUOT, WI calc.s for Tk2
+          F,F     [DIE_TkIII]          Include (?) LTDR AUOT, WI calc.s for TkIII
+          F,F     [DIE_TkIV]           Include (?) LTDR AUOT, WI calc.s for TkIV
+          F,F     [DIE_VI]             Include (?) LTDR AUOT, WI calc.s for VI
+          F,F     [DIE_Cr2]            Include (?) LTDR AUOT, WI calc.s for Cr2
+          F,F     [DIE_CrIII]          Include (?) LTDR AUOT, WI calc.s for CrIII
+          F,F     [DIE_CrIV]           Include (?) LTDR AUOT, WI calc.s for CrIV
+          F,F     [DIE_CrV]            Include (?) LTDR AUOT, WI calc.s for CrV
+          F,F     [DIE_Mn2]            Include (?) LTDR AUOT, WI calc.s for Mn2
+          F,F     [DIE_MnIII]          Include (?) LTDR AUOT, WI calc.s for MnIII
+          F,F     [DIE_MnIV]           Include (?) LTDR AUOT, WI calc.s for MnIV
+          F,F     [DIE_FeI]            Include (?) LTDR AUOT, WI calc.s for FeI
+          F,F     [DIE_Fe2]            Include (?) LTDR AUOT, WI calc.s for Fe2
+          F,F     [DIE_FeIII]          Include (?) LTDR AUOT, WI calc.s for FeIII
+          F,F     [DIE_FeIV]           Include (?) LTDR AUOT, WI calc.s for FeIV
+          F,F     [DIE_FeV]            Include (?) LTDR AUOT, WI calc.s for FeV
+          F,F     [DIE_FeSIX]          Include (?) LTDR AUOT, WI calc.s for FeSIX
+          F,F     [DIE_Co2]            Include (?) LTDR AUOT, WI calc.s for Co2
+          F,F     [DIE_CoIII]          Include (?) LTDR AUOT, WI calc.s for CoIII
+          F,F     [DIE_CoIV]           Include (?) LTDR AUOT, WI calc.s for CoIV
+          F,F     [DIE_CoV]            Include (?) LTDR AUOT, WI calc.s for CoV
+          F,F     [DIE_CoSIX]          Include (?) LTDR AUOT, WI calc.s for CoSIX
+          F,F     [DIE_Nk2]            Include (?) LTDR AUOT, WI calc.s for Nk2
+          F,F     [DIE_NkIII]          Include (?) LTDR AUOT, WI calc.s for NkIII
+          F,F     [DIE_NkIV]           Include (?) LTDR AUOT, WI calc.s for NkIV
+          F,F     [DIE_NkV]            Include (?) LTDR AUOT, WI calc.s for NkV
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            F     [FIX_NE]             Fix the electron density ?
+
+            F     [FIX_IMP]            Automatically fix impurity species?
+
+
+            F     [FIX_T]              Keep the Temperature fixed ?
+            F     [FIX_T_AUTO]         Fix the Temperature automatically ?
+  0.00000E+00     [TAU_SCL_T]          Electron scattering optical depth from which to fix T
+  3.00000E-01     [T_MIN]              Minimum electron temperature
+            F     [SRCE_ONLY]          Allow only ths source function to vary?
+            F     [ADD_OPAC]           Add additional pacity to help converge model?
+  2.00000E-01     [OP_SCL_FAC]         Scale factor for addition of extra opacity
+       TRI        [SOL_METH]           Which Method To solve Matrix Equations DIAG, TRI, PEN, GSIT or MIN
+       MAJOR      [SCALE_OPT]          Scale option (LOCAL, NONE or GLOBAL) ?
+  1.00000E-02     [EPS_TERM]           If maximum fractional % change < EPS terminate model
+  5.00000E+00     [MAX_LIN]            Maximum fractional change for linearization
+  1.00000E+05     [MAX_LAM]            Maximum fractional change for lambda iteration
+  1.00000+250     [MAX_CHNG]           If maximum % fractional change > MAX_CHNG terminate model
+            F     [COMP_BA]            Compute BA matrix ?
+            T     [STORE_BA]           Store the BA matrix for/during each iteration ?
+            F     [STORE_BA_INV]       Store the INVERSE of the BA matrix on each iteration ?
+            F     [WR_PRT_INV]         Store part of the INVERSE to reduce storage TRIDIAG only)?
+            2     [N_FIX_BA]           Number of iterations to hold BA fixed
+  1.00000E-05     [BA_CHK_FAC]         If dJ < BA_CHK_FAC*RJ, ignore correction to BA
+  1.00000E+01     [FIX_BA]             Switch off BA computation if MAXCH< VAL_FIX_BA
+  2.00000E+02     [LAM_VAL]            Do Lambda iterations if MAXCH > VAL_DO_LAM
+            2     [NUM_LAM]            # of Lambda iterations if MAXCH > VAL_DO_LAM
+            F     [RD_SOL]             RD in solution vector to update populations
+
+            T     [JC_W_EDD]           Compute continuum intensity using Eddington factors
+            T     [JBAR_W_EDD]         Compute line continuum intensity using Eddington factors
+            T     [INCL_DJDT]          DJDt terms in transfer equaton for SN models?
+            F     [USE_J_REL]          Use MOM_J_REL_VN to solve the moment equations?
+            T     [USE_FRM_REL]        Use CMF_FORMAL_REL to compute F etc?
+            F     [INCL_REL]           Include relativistic terms in the transfer equaton?
+            F     [INCL_ADV_TRANS]     Include advection terms in the transfer equaton?
+
+            F     [INC_GRID]           Increase grid size to improve accuracy?
+            F     [ALL_FREQ]           Increase accuracy for all frequencies?
+  3.19000E+00     [ACC_END]            Increase accuracy for all frequencies < ACC_END?
+            2     [N_INS]              Number of points to be inserted in higher accuracy grid (1, 2 or 3)
+            1     [ST_INT]             Interpolate from ?
+           30     [END_INT]            Interpolate to ?
+           50     [ND_QUAD]            Quadratic interpolation from ND-? to ND
+   LOG            [INTERP_TYPE]        Perform interpolations in LOG or LIN plane
+
+         5000     [N_PAR]              Rate of BA incrementation by BA_PAR in cont. loop (# of freq)
+
+            F     [COMP_F]             Compute new Eddington factors (f)
+  1.00000E-04     [ACC_F]              Accuracy with which to compute the eddington factor f
+
+            T     [DO_NG]              Perform NG acceleration when applicable ?
+  5.00000E+00     [BEG_NG]             Percentage accuracy at which to begin NG acceleration
+           20     [IBEG_NG]            Iteration at which to begin NG acceleration
+          200     [BW_NG]              Depth band width for NG acceleration
+           20     [ITS/NG]             Number of iterations between NG accelerations (>=4)
+
+            F     [DO_UNDO]            Undo corrections at last 5 depths
+            F     [STOP_IF_BP]         Undo corrections at last 5 depths
+ *****************************************************************************
+ *****************************************************************************
+
+  LOG10[Cross sections] for Hydrogen for all (n,l) states up to n=30
+  Cross-sctions are in program units (i.e. cgs unit*10^10)
+  Created 22-Nov-1996 using OUT_HYDL based on HDYCROSSL.
+
+  Format N, L, # of data points.
+
+ *****************************************************************************
+ *****************************************************************************
+
+ 30                 !Maximum principal quantum number
+ *****************************************************************************
+ *****************************************************************************
+
+  Bound-free Gaunt factors for Hydrogen for all n states up to n=30.
+  Created 22-Nov-1996: Based on summing HDYCROSSL (n,l) rates.
+
+  Format N, # of data points.
+
+ *****************************************************************************
+ *****************************************************************************
+
+ 30                 !Maximum principal quantum number
+************************************************************************************************************************
+
+                 Energy Levels and statistical weights for HOPE
+
+ [Reference] C\,{\sc iv} oscillator strengths for $n < 6$ are from \citep{LB11_Li_like}.
+ [Reference] Other values are from \citep{Lei72_CIV} ($n < 8$) or hydrogenic.
+
+                  g        E(cm^-1)    10^15 Hz     eV       Lam(A)       ID      ARAD         C4          C6
+************************************************************************************************************************
+
+17-Oct-2000                                      !Format date
+64                                               !Number of energy levels
+520178.4000                                      !Ionization energy
+4.0                                              !Screened nuclear charge
+1539                                             !Number of transitions
+ Final number of transitions found is:   1539
+
+*******************************************************************************
+
+   Photoionization cross sections for CIV. Levels up to and including level
+   12 are split into separate l states. All others are combined into a single
+   n state.
+
+		  5 - Opacity project [Index]
+	          4 - Leibowitz [Index]
+	          3 - Hydrogenic:  [ scale, n]
+	          2 - Hydrogenic: separate l states (up to z)
+	                               [index, n]
+		  1 - Parameterized power law (Hildago etc).
+			               [ alpha(nu_o), beta, ]
+  This version, created with new data format, should contain same data
+  as earlier verisons.
+
+ [Reference] C\,{\sc iv} photoionization data is from \citep{PSS88_LI_seq,Lei72_CIV}
+ [Reference] Hydrogenic rates used for high l and n states.
+
+*******************************************************************************
+
+05-Mar-1996                            !Date
+ 59                                    !Number of energy levels
+  1                                    !Number of photoionization routes
+4.0                                    !Screened nuclear charge
+1s2_1Se                                !Final state in ion
+0.0                                    !Excitation energy of final state
+ 1.0                                   !Statistical weight of ion
+0.0                                    !Sigma used for Gaussian smoothing (km/s)
+Megabarns                              !Cross-section unit
+False                                  !Split J levels
+ 193                                   !Total number of data pairs
+
+ Summary of Photoionization routes for CIV
+ Final State/Phot ID                       1
+ 1s2_1Se                                   T
+ [Reference] Collision strengths for C\,{\sc iv} for $n < 6$ are from \citep{LB11_Li_like}.
+************************************************************************************************************************
+
+                 Energy Levels and statistical weights for CIII
+
+ [Reference] C\,{\sc iii} oscillator strengths are from P.~J. Storey (private communication).
+
+                  g        E(cm^-1)    10^15 Hz     eV       Lam(A)       ID      ARAD       GAM2        GAM4
+************************************************************************************************************************
+
+17-Oct-2000                                      !Format date
+243                                              !Number of energy levels
+386241.0000                                      !Ionization energy
+3.0                                              !Screened nuclear charge
+5528                                             !Number of transitions
+ Final number of transitions found is:    906
+
+**************************************************************************************************
+
+ C III photoioization data
+
+ [Reference] C\,{\sc iii} photoioization data is from P.~J.Storey (private communication).
+
+**************************************************************************************************
+
+13-Mar-2002 18:22:42              !Date
+217                               !Number of energy levels
+2                                 !Number of photoionization routes
+3.0                               !Screened nuclear charge
+2s_2Se/2s2Se                      !Final state in ion
+0                                 !Excitation energy of final state
+2                                 !Statistical weight of ion
+500.0                             !Sigma used for Gaussian smoothing (km/s)
+Megabarns                         !Cross-section unit
+False                             !Split J levels
+56901                             !Total number of data pairs
+
+
+13-Mar-2002 18:22:42              !Date
+217                               !Number of energy levels
+2                                 !Number of photoionization routes
+3.0                               !Screened nuclear charge
+2p_2Po/2p2Po                      !Final state in ion
+64555.80                          !Excitation energy of final state
+6                                 !Statistical weight of ion
+500.0                             !Sigma used for Gaussian smoothing (km/s)
+Megabarns                         !Cross-section unit
+False                             !Split J levels
+8964                              !Total number of data pairs
+
+ Summary of Photoionization routes for CIII
+ Final State/Phot ID                       1    2
+ 2s_2Se                                    T    F
+ 2p_2Po                                    F    T
+
+********************************************************************************
+
+                 Dielectronic Transitions for CIII
+                 LTDR transitions with ALPHA(DIE) < 1.00E-02 (*10^-12) ignored
+
+**************************************************************************************************
+
+ C III photoioization data
+
+ [Reference] C\,{\sc iii} dielectronic line data is from P.~J.Storey (private communication).
+
+**************************************************************************************************
+
+********************************************************************************
+
+17-NOV-1989                                      !Date
+386241.0000                                      !Ionization energy
+3.0                                              !Screened nuclear charge
+141                                              !Number of dielectronic transitions
+
+
+ Summary of dielectronic transitions included (LS : WI)
+[Units 10^-12] ( ) denotes percentage of LTDR NOT included
+    0( 101)   0.000E+00(100.00)   0.000E+00(100.00)   0.000E+00(100.00)
+   40(  40)   1.159E+01(  0.00)   5.354E+00(  0.00)   3.525E+00(  0.00)
+ [Reference] C\,{\sc iii} collsion rates among the lowest 6 terms are from \citrep{BBD85_col}.
+************************************************************************************************************************
+
+ [Reference] C\,{\sc ii} oscillator strengths from \cite{DSK00_CII_recom}
+ [Reference]             (\& Peter Storey, private communication]
+ [Reference] Hydrogenic values used to expand atom.
+ [Reference] NIST \cite[][2012-10-15]{NIST_V5} values used when available.
+
+                 Energy Levels and statistical weights for C2
+
+                              g        E(cm^-1)    10^15 Hz     eV       Lam(A)       ID      ARAD         C4          C6
+************************************************************************************************************************
+
+17-Oct-2000                                      !Format date
+338                                              !Number of energy levels
+196664.7000                                      !Ionization energy
+2.0                                              !Screened nuclear charge
+8017                                             !Number of transitions
+ Final number of transitions found is:     98
+
+
+******************************************************************************
+
+       Photoionization cross-sections for C II
+
+>> Data is from the Opacity project
+>>   Verner high energy tail included for gnd level
+     Data not smoothed
+
+          Types of cross sections included:
+         -----------------------------------
+
+           1 - Seaton formula fit [sigma_o,alpha,beta]
+
+          20 - Opacity Project: smoothed [number of data pairs]
+
+ [Reference] C\,{\sc ii} photoionization cross-sections from \cite{DSK00_CII_recom}
+ [Reference]             (\& Peter Storey, private communication]
+
+******************************************************************************
+
+19-Jul-2001                             !Date
+219                                     !Number of energy levels
+2                                       !Number of photoionization routes
+2.0                                     !Screened nuclear charge
+2s2_1Se/2s2s1Se                         !Final state in ion
+0.0                                     !Excitation energy of final state
+1.0                                     !Statistical weight of ion
+0.0D0                                   !Sigma used for Gaussian smoothing (km/s)
+Megabarns                               !Cross-section unit
+False                                   !Split J levels
+22584                                   !Total number of data pairs
+
+
+**********************************************************************
+**********************************************************************
+
+Hydrogenic cross-sections for CII for ioinization to CIII 2s2p_3Po.
+Cross-sections for levels below the ionization limit are assumed to
+be contained in the A file.
+
+**********************************************************************
+**********************************************************************
+
+18-Jul-2001 17:46:57                   !Date
+219                                    !Number of energy levels
+2                                      !Number of photoionization routes
+2.0                                    !Screened nuclear charge
+2s_2p_3Po/2s2p3Po                      !Final state in ion
+52419.42                               !Excitation energy of final state
+9.0                                    !Statistical weight of ion
+0.0D0                                  !Sigma used for Gaussian smoothing (km/s)
+Megabarns                              !Cross-section unit
+False                                  !Split J levels
+449                                    !Total number of data pairs
+
+ Summary of Photoionization routes for C2
+ Final State/Phot ID                       1    2
+ 2s2s1Se                                   T    F
+ 2s2p3Po                                   F    T
+ [Reference] C\,{\sc ii} collision rates are from \citep{Tay08_CII_col}.
+************************************************************************************************************************
+
+                 Energy Levels and statistical weights for CI
+
+ [Reference] Oscillator strengths for C\,{\sc i} were computed by Bob Kurucz \citep{Kur09_ATD} and were obtained from
+ [Reference] \citep{Kur_web} in 2004.
+
+                                    g        E(cm^-1)    10^15 Hz     eV       Lam(A)       ID      ARAD       GAM2        GAM4
+************************************************************************************************************************
+
+17-Oct-2000                                      !Format date
+242                                              !Number of energy levels
+90820.4200                                       !Ionization energy
+1.0                                              !Screened nuclear charge
+10204                                            !Number of transitions
+ Final number of transitions found is:    120
+
+**************************************************************************************************************
+**************************************************************************************************************
+
+ Photoionization cross-sections for CI
+
+ [Reference] C\,{\sc i} photoionization cross-sections were computed by \cite{LP89_C_seq} as part of the opacity
+ [Reference] project \citep{Sea87_OP} and were obtained from \citep{Topbase93}.
+
+
+**************************************************************************************************************
+**************************************************************************************************************
+
+12-Dec-2004 22:42:01                   !Date
+194                                    !Number of energy levels
+1                                      !Number of photoionization routes
+1.0                                    !Screened nuclear charge
+2s2_2p_2Po/2s2s2p2Po                   !Final state in ion
+0.0                                    !Excitation energy of final state
+6.0                                    !Statistical weight of ion
+50.0                                   !Sigma used for Gaussian smoothing (km/s)
+Megabarns                              !Cross-section unit
+False                                  !Split J levels
+137139                                 !Total number of data pairs
+
+ Summary of Photoionization routes for CI
+ Final State/Phot ID                       1
+ 2s2_2p_2Po                                T
+************************************************************************************************************************
+
+                 Energy Levels and statistical weights for OIV
+
+                              g        E(cm^-1)    10^15 Hz     eV       Lam(A)       ID      ARAD       GAM2        GAM4
+************************************************************************************************************************
+
+17-Oct-2000                                      !Format date
+324                                              !Number of energy levels
+624382.0000                                      !Ionization energy
+4.0                                              !Screened nuclear charge
+7598                                             !Number of transitions
+ Final number of transitions found is:    544
+
+
+******************************************************************************
+
+       Photoionization cross-sections for O IV
+
+>> Data is from the Opacity project
+>>   Smoothed with a gausian of width 3000 km/sec
+
+          Types of cross sections included:
+         -----------------------------------
+
+           1 - Seaton formula fit [sigma_o,alpha,beta]
+           2 - Hydrogenic (n,l)
+           3 - Hydrogenic (n)
+          20 - Opacity Project: smoothed [number of data pairs]
+
+******************************************************************************
+
+27-Dec-2002                             !Date
+242                                     !Number of energy levels
+2                                       !Number of photoionization routes
+4.0                                     !Screened nuclear charge
+2s2_1Se/2s2s1Se                         !Final state in ion
+0.0                                     !Excitation energy of final state
+1.0                                     !Statistical weight of ion
+3000.0                                  !!Sigma used for Gaussian smoothing (km/s)
+Megabarns                               !Cross-section unit
+False                                   !Split J levels
+19774                                   !Total number of data pairs
+
+
+
+******************************************************************************
+
+       Photoionization cross-sections for O IV
+
+>> Data is from the Opacity project
+>>   Smoothed with a gausian of width 3000 km/sec
+
+          Types of cross sections included:
+         -----------------------------------
+
+           1 - Seaton formula fit [sigma_o,alpha,beta]
+           2 - Hydrogenic (n,l)
+           3 - Hydrogenic (n)
+          20 - Opacity Project: smoothed [number of data pairs]
+
+******************************************************************************
+
+28-Dec-2002                             !Date
+242                                     !Number of energy levels
+2                                       !Number of photoionization routes
+4.0                                     !Screened nuclear charge
+2s2p3Po                                 !Final state in ion
+82234.0                                 !Excitation energy of final state
+9.0                                     !Statistical weight of ion
+3000.0                                  !Sigma used for Gaussian smoothing (km/s)
+Megabarns                               !Cross-section unit
+False                                   !Split J levels
+4562                                    !Total number of data pairs
+
+ Summary of Photoionization routes for OIV
+ Final State/Phot ID                       1    2
+ 2s2_1Se                                   T    T
+ 2s2p3Po                                   F    F
+************************************************************************************************************************
+
+                 Energy Levels and statistical weights for OIII
+
+ [Reference] O\,{\sc iii} oscillator strengths are from \cite{LPS89_OIII_phot}.
+
+
+                            g        E(cm^-1)    10^15 Hz     eV       Lam(A)       ID      ARAD       GAM2        GAM4
+************************************************************************************************************************
+
+17-Oct-2000                                      !Format date
+343                                              !Number of energy levels
+443084.7000                                      !Ionization energy
+3.0                                              !Screened nuclear charge
+6516                                             !Number of transitions
+ Final number of transitions found is:    516
+
+
+******************************************************************************
+       PACO- Include and pack some 7 8i 9 and 10 levels with l>=h
+       Photoionization cross-sections for O III
+       Data is from the Opacity project
+       Verner high energy tail included for gnd level
+
+          Types of cross sections included:
+         -----------------------------------
+
+           1 - Seaton formula fit [sigma_o,alpha,beta]
+          20 - Opacity Project: smoothed [number of data pairs]
+
+ [Reference] O\,{\sc iii} photoionization data from \cite{LPS89_OIII_phot}.
+
+******************************************************************************
+
+16-Mar-2006                             !Date
+249                                     !Number of energy levels
+1                                       !Number of photoionization routes
+3.0                                     !Screened nuclear charge
+2s2_2p_2Po/2s2s2p2Po                    !Final state in ion
+0.0                                     !Excitation energy of final state
+6.0                                     !Statistical weight of ion
+0.0                                     !Sigma used for Gaussian smoothing (km/s)
+Megabarns                               !Cross-section unit
+False                                   !Split J levels
+167274                                  !Total number of data pairs
+
+ Summary of Photoionization routes for OIII
+ Final State/Phot ID                       1
+ 2s2_2p_2Po                                T
+ [Reference] O\,{\sc iii} collision strengths (Keith Butler, private communication, 2012)
+************************************************************************************************************************
+
+                 Energy Levels and statistical weights for O2
+
+                                g        E(cm^-1)    10^15 Hz     eV       Lam(A)       ID      ARAD       GAM2        GAM4
+************************************************************************************************************************
+
+17-Oct-2000                                      !Format date
+340                                              !Number of energy levels
+283270.9000                                      !Ionization energy
+2.0                                              !Screened nuclear charge
+8937                                             !Number of transitions
+ Final number of transitions found is:   1375
+
+
+******************************************************************************
+
+       Photoionization cross-sections for O II
+
+>> Data is from the Opacity project
+>>   Smoothed with a gausian of width 3000 km/sec
+
+          Types of cross sections included:
+         -----------------------------------
+
+           1 - Seaton formula fit [sigma_o,alpha,beta]
+
+          20 - Opacity Project: smoothed [number of data pairs]
+
+******************************************************************************
+
+29-Sep-2000                             !Date
+219                                     !Number of energy levels
+1                                       !Number of photoionization routes
+2.0                                     !Screened nuclear charge
+2p^2_3Pe/2s2_2p2_3Pe                    !Final state in ion
+0.0                                     !Excitation energy of final state
+9.0                                     !Statistical weight of ion
+3000.0                                  !Sigma used for Gaussian smoothing (km/s)
+Megabarns                               !Cross-section unit
+False                                   !Split J levels
+44620                                   !Total number of data pairs
+
+ Summary of Photoionization routes for O2
+ Final State/Phot ID                       1
+ 2s2_2p2_3Pe                               T
+************************************************************************************************************************
+
+                 Energy Levels and statistical weights for O I
+
+ [Reference] O\,{\sc i} oscillator strengths are from Topbase \citep{Topbase93} and
+ [Reference] from \citep{TF02_OI_NIa}. The later replace those from Topbase when available.
+
+                              g        E(cm^-1)    10^15 Hz     eV       Lam(A)       ID      ARAD         C4          C6
+************************************************************************************************************************
+
+17-Oct-2000                                      !Format date
+199                                              !Number of energy levels
+109837.0200                                      !Ionization energy
+1.0                                              !Screened nuclear charge
+4193                                             !Number of transitions
+ Final number of transitions found is:    233
+
+******************************************************************************
+
+       Photoionization cross-sections for O I
+
+>>  Data is from the Opacity project
+>>   Verner high energy tail included for gnd level
+>>   Smoothed with a gausian of width 3000 km/sec
+
+          Types of cross sections included:
+         -----------------------------------
+
+           1 - Seaton formula fit [sigma_o,alpha,beta]
+           2 - Hydrogenic (n,lmin, lmax)
+          20 - Opacity Project: smoothed [number of data pairs]
+
+ [Reference] Photoionization data for O~{\sc i} are from \citep{Nahar99_Oxy}.
+
+******************************************************************************
+
+6-Oct-1999                              !Date
+107                                     !Number of energy levels
+2                                       !Number of photoionization routes
+1.0                                     !Screened nuclear charge
+2s2_2p3_4So/2p^3_4So                    !Final state in ion
+0.0                                     !Excitation energy of final state
+4.0                                     !Statistical weight of ion
+0.0                                     !Sigma used for Gaussian smoothing (km/s)
+Megabarns                               !Cross-section unit
+False                                   !Split J levels
+283433                                  !Total number of data pairs
+
+
+********************************************************************************
+********************************************************************************
+
+ Photoionization cross-sections for OI to the first excited state of O2.
+
+ Types of cross sections included:
+ -----------------------------------
+
+     1 - Seaton formula fit [sigma_o,alpha,beta]
+     2 - Hydrogenic (n,lmin, lmax)
+    20 - Opacity Project: smoothed [number of data pairs]
+
+ [Reference] Photoionization data for O~{\sc i} are from \citep{Nahar99_Oxy}.
+ [Reference] B cross-sections are everything other than to the ground state.
+
+********************************************************************************
+********************************************************************************
+
+19-Sep-2012 17:21:26                   !Date
+107                                    !Number of energy levels
+2                                      !Number of photoionization routes
+1.0                                    !Screened nuclear charge
+2s2_2p3_2Do                            !Final state in ion
+0.804D0                                !Excitation energy of final state
+10.0D0                                 !Statistical weight of ion
+Megabarns                              !Cross-section unit
+False                                  !Split J levels
+10125                                  !Total number of data pairs
+
+ Summary of Photoionization routes for OI
+ Final State/Phot ID                       1    2
+ 2s2_2p3_4So                               T    F
+ 2s2_2p3_2Do                               F    T
+ [Reference] Collision strengths for O\,{\sc i} from the lowest 3 levels are from \citep{ZT03_OI_col}.
+************************************************************************************************************************
+
+                 Energy Levels and statistical weights for NeIII
+
+ [Reference] Oscillator strengths for Ne\,{\sc iii } are from the compilation by \cite{KP75_linelist}
+ [Reference] and the opacity project \citep{Sea87_OP}.
+
+                             g        E(cm^-1)    10^15 Hz     eV       Lam(A)       ID      ARAD       GAM2        GAM4
+************************************************************************************************************************
+
+17-Oct-2000                                      !Format date
+188                                              !Number of energy levels
+511800.0000                                      !Ionization energy
+3.0                                              !Screened nuclear charge
+2343                                             !Number of transitions
+ Final number of transitions found is:    429
+
+
+******************************************************************************
+
+       Photoionization cross-sections for Ne III
+
+ Data is from the Opacity project
+   Smoothed with a gausian of width 3000 km/sec
+
+          Types of cross sections included:
+         -----------------------------------
+
+           1 - Seaton formula fit [sigma_o,alpha,beta]
+          20 - Opacity Project: smoothed [number of data pairs]
+
+ [Reference] Ne\,{\sci iii} photoionization cross-sections were computed part of
+ [Reference] the opacity project \cite{Sea87_OP} and obtained from TOPbase \citep{Topbase93}.
+
+******************************************************************************
+
+19-Nov-2007                             !Date
+149                                     !Number of energy levels
+1                                       !Number of photoionization routes
+3.0                                     !Screened nuclear charge
+2s2_2p3_4So                             !Final state in ion
+0.0                                     !Excitation energy of final state
+4.0                                     !Statistical weight of ion
+0.00                                    !Sigma used for Gaussian smoothing (km/s)
+Megabarns                               !Cross-section unit
+False                                   !Split J levels
+80358                                   !Total number of data pairs
+
+ Summary of Photoionization routes for NeIII
+ Final State/Phot ID                       1
+ 2s2_2p3_4So                               T
+************************************************************************************************************************
+
+                 Energy Levels and statistical weights for NeII
+
+  Data is from the Opacity Project
+          Maximum energy included = Ionization energy =329747.
+  Data is from NIST
+          Maximum energy included = Ionization energy =330391.
+          Packed according to J states by pack.f
+  Data from the Opacity Project rewritten with NIST energies
+          59 energies from NIST included
+          109 energies from the Opacity Project scaled by  0.9978
+          Oscillator strengths scaled to conserve (g*f)/(h*nu)
+  Date written with NIST split level energies.
+          Oscilator strength split assuming LS coupling using PROGS:REWITE_OSC_V2
+  Kurucz oscialtor strengths inserted: 126 matching levels using MEGRE_KUR.
+
+                               g        E(cm^-1)    10^15 Hz     eV       Lam(A)       ID      ARAD       GAM2        GAM4
+************************************************************************************************************************
+
+17-Oct-2000                                      !Format date
+242                                              !Number of energy levels
+330391.0000                                      !Ionization energy
+2.0                                              !Screened nuclear charge
+5795                                             !Number of transitions
+ Final number of transitions found is:    924
+
+
+******************************************************************************
+
+       Photoionization cross-sections for Ne II
+
+>> Data is from the Opacity project
+>>   Smoothed with a gausian of width 3000 km/sec
+
+          Types of cross sections included:
+         -----------------------------------
+
+           1 - Seaton formula fit [sigma_o,alpha,beta]
+
+          20 - Opacity Project: smoothed [number of data pairs]
+
+******************************************************************************
+
+19-Nov-2007                             !Date
+168                                     !Number of energy levels
+1                                       !Number of photoionization routes
+2.0                                     !Screened nuclear charge
+2s2_2p4_3Pe                             !Final state in ion
+0.0                                     !Excitation energy of final state
+9.0                                     !Statistical weight of ion
+0.00                                    !Sigma used for Gaussian smoothing (km/s)
+Megabarns                               !Cross-section unit
+False                                   !Split J levels
+58953                                   !Total number of data pairs
+
+ Summary of Photoionization routes for Ne2
+ Final State/Phot ID                       1
+ 2s2_2p4_3Pe                               T
+************************************************************************************************************************
+
+                   Energy Levels and statistical weights for NeI
+      References:  Energy levels are from NIST
+	           f values are from NIST, Kurucz, with additional values comoputed using
+                   Cowan's code at LANL
+                   M1 / E2 f values from MHCF (Sep 2010)
+
+                                      g        E(cm^-1)    10^15 Hz     eV       Lam(A)       ID      ARAD         C4          C6
+************************************************************************************************************************
+
+17-Oct-2000                                      !Format date
+201                                              !Number of energy levels
+173929.7500                                      !Ionization energy
+1.0                                              !Screened nuclear charge
+2629                                             !Number of transitions
+ Final number of transitions found is:   1571
+
+
+******************************************************************************
+
+    Photoionization cross-sections for Ne I
+    Data is from the Opacity project
+    Data is not smoothed.
+    Cross-sections converted to JK values using Seatoon and Cowan (LANL)
+       mixing coeefiecients.
+    Types of cross sections included:
+          20 - Opacity Project: smoothed [number of data pairs]
+
+******************************************************************************
+
+24-Aug-2011                             !Date
+201                                     !Number of energy levels
+1                                       !Number of photoionization routes
+1.0                                     !Screened nuclear charge
+2s2_2p5_2Po                             !Final state in ion
+0.0                                     !Excitation energy of final state
+6.0                                     !Statistical weight of ion
+0.00                                    !Sigma used for Gaussian smoothing (km/s)
+Megabarns                               !Cross-section unit
+True                                    !Split J levels
+80009                                   !Total number of data pairs
+
+ Summary of Photoionization routes for NeI
+ Final State/Phot ID                       1
+ 2s2_2p5_2Po                               T
+
+********************************************************************************
+
+                 Energy Levels and statistical weights for Na
+
+          Data for transitions with n =< 10, and l<=3 are from the
+             Opacity project.
+          Data for transitions with nl =< 9, nup >=11, and l=s,p or d
+             are scaled hydrogenic values.
+          All other data values are hydrogenic.
+
+          Energy levels are from NIST when available, or based on a estimate
+            of the quantum defect.
+
+********************************************************************************
+
+14-Aug-1997                                      !Date
+71                                               !Number of energy levels
+41449.4400                                       !Ionization energy
+1.0                                              !Screened nuclear charge
+1614                                             !Number of transitions
+ Final number of transitions found is:   1549
+
+
+******************************************************************************
+
+       Photoionization cross-sections for Na I
+
+>> Data is from the Opacity project
+>>   Verner high energy tail included for gnd level
+>>   Smoothed with a gausian of width 3000 km/sec
+
+          Types of cross sections included:
+         -----------------------------------
+
+   20 - Opacity Project: smoothed [Sigma=3000 km/s]
+    2 - Hydrogenic: Split l (z states, n > 11)
+    3 - Hydrogenic: Pure n level (all l, n >= 13)
+
+******************************************************************************
+
+24-May-1996                             !Date
+65                                      !Number of energy levels
+1                                       !Number of photoionization routes
+1.0                                     !Screened nuclear charge
+2s22p61Se/2p6_1Se                       !Final state in ion
+0.0                                     !Excitation energy of final state
+1.0                                     !Statistical weight of ion
+3000.0                                  !Sigma used for Gaussian smoothing (km/s)
+Megabarns                               !Cross-section unit
+False                                   !Split J levels
+5608                                    !Total number of data pairs
+
+ Summary of Photoionization routes for NaI
+ Final State/Phot ID                       1
+ 2s22p61Se                                 T
+************************************************************************************************************************
+
+                 Energy Levels and statistical weights for MgIII
+
+ [Reference] Mg\,{\sc iii} oscillator strengths are from the opacity project
+ [Reference] \citep{Sea87_op}, and were retrieved from Topbase \citep{Topbase93}.
+
+                     g        E(cm^-1)    10^15 Hz     eV       Lam(A)       ID      ARAD       GAM2        GAM4
+************************************************************************************************************************
+
+17-Oct-2000                                      !Format date
+201                                              !Number of energy levels
+646402.0000                                      !Ionization energy
+3.0                                              !Screened nuclear charge
+3052                                             !Number of transitions
+ Final number of transitions found is:    739
+
+
+******************************************************************************
+
+       Photoionization cross-sections for Mg III
+
+>> Data is from the Opacity project
+>>   Verner high energy tail included for gnd level
+>>   Smoothed with a gausian of width 2999 km/sec
+
+          Types of cross sections included:
+         -----------------------------------
+
+           1 - Seaton formula fit [sigma_o,alpha,beta]
+           2 - Hydrogenic (n,l)
+	   3 - Hydrogenic (n)
+          20 - Opacity Project: smoothed [number of data pairs]
+
+ [Reference] Mg\,{\sc iii} oscillator strengths are from the opacity project
+ [Reference] \citep{Sea87_op}, and were retrieved from Topbase \citep{Topbase93}.
+
+
+******************************************************************************
+
+26-Jun-2001                             !Date
+189                                     !Number of energy levels
+1                                       !Number of photoionization routes
+3.0                                     !Screened nuclear charge
+2s2_2p5_2Po                             !Final state in ion
+0.0                                     !Excitation energy of final state
+6.0                                     !Statistical weight of ion
+3000.0                                  !Sigma used for Gaussian smoothing (km/s)
+Megabarns                               !Cross-section unit
+False                                   !Split J levels
+14650                                   !Total number of data pairs
+
+ Summary of Photoionization routes for MgIII
+ Final State/Phot ID                       1
+ 2s2_2p5_2Po                               T
+************************************************************************************************************************
+
+                 Energy Levels and statistical weights for MG2
+
+ [Reference] Mg\,{\sc ii} oscillator strengths are from the opacity project
+ [Reference] \citep{Sea87_op}, and were retrieved from Topbase \citep{Topbase93}.
+ [Reference] Augumented by hydrogenic values, and algebracic splitting performed.
+ [Reference] These have been modified using values from \cite{NIST_V5} (2012-10-14).
+
+                    g        E(cm^-1)    10^15 Hz     eV       Lam(A)       ID      ARAD         C4          C6
+************************************************************************************************************************
+
+17-Oct-2000                                      !Format date
+80                                               !Number of energy levels
+121267.6100                                      !Ionization energy
+2.0                                              !Screened nuclear charge
+1993                                             !Number of transitions
+ Final number of transitions found is:   1890
+
+
+**************************************************************************************************
+
+       Photoionization cross-sections for Mg II
+
+>> Data is from the Opacity project
+>>   Verner high energy tail included for gnd level
+>>   Smoothed with a gausian of width 3000 km/sec
+
+          Types of cross sections included:
+         -----------------------------------
+
+          20 - Opacity Project: smoothed [number of data pairs]
+           2 - Hydrogenic: Split l (z states, n > NONE
+           3 - Hydrogenic: Pure n level (all l, n >= 11)
+
+ [Reference] Mg\,{\sc iv} photoioinization cross-sections are from the opacity project
+ [Reference] \citep{Sea87_op}, and were retrieved from Topbase \citep{Topbase93}.
+
+**************************************************************************************************
+
+24-May-1996                             !Date
+58                                      !Number of energy levels
+1                                       !Number of photoionization routes
+2.0                                     !Screened nuclear charge
+2p6_1Se                                 !Final state in ion
+0.0                                     !Excitation energy of final state
+1.0                                     !Statistical weight of ion
+3000.0                                  !Sigma used for Gaussian smoothing (km/s)
+Megabarns                               !Cross-section unit
+False                                   !Split J levels
+4382                                    !Total number of data pairs
+
+ Summary of Photoionization routes for Mg2
+ Final State/Phot ID                       1
+ 2p6_1Se                                   T
+ [Reference] Mg\,{\sc ii} collision strength for $n < 7$ are from \cite{LWB09_Na_seq_col}.
+************************************************************************************************************************
+
+                 Energy Levels and statistical weights for AlIII
+
+ [Reference] Al\,{\sc iiii} oscillator strengths are from the opacity project
+ [Reference] \citep{Sea87_op}, and were retrieved from Topbase \citep{Topbase93}.
+ [Reference] Data from forbidden transitions is from \cite{LWB09_Na_seq_col}.
+ [Reference] Energy levels are from NIST \citep[][2012-Oct-15}{NIST_V5} when available,
+ [Reference] or based on a estimate of the quantum defect.
+
+                    g        E(cm^-1)    10^15 Hz     eV       Lam(A)       ID      ARAD         C4          C6
+************************************************************************************************************************
+
+17-Oct-2000                                      !Format date
+80                                               !Number of energy levels
+229445.7000                                      !Ionization energy
+3.0                                              !Screened nuclear charge
+2011                                             !Number of transitions
+ Final number of transitions found is:    596
+
+
+******************************************************************************
+
+       Photoionization cross-sections for
+
+>> Verner high energy tail included for gnd level
+>> Opacity project data smoothed by phot_smooth.f
+>>   Smoothed with a gausian of width 3000 km/sec
+
+          Types of cross sections included:
+         -----------------------------------
+
+          20 - Opacity Project: smoothed [number of data pairs]
+           2 - Hydrogenic: Split l (z states, n > 11)
+           3 - Hydrogenic: Pure n level (all l, n >= 13)
+
+******************************************************************************
+
+24-May-1996                             !Date
+57                                      !Number of energy levels
+1                                       !Number of photoionization routes
+3.0                                     !Screened nuclear charge
+2s2_2p6_1Se / 2s22p61Se                 !Final state in ion
+0.0                                     !Excitation energy of final state
+1.0                                     !Statistical weight of ion
+3000.0                                  !Sigma used for Gaussian smoothing (km/s)
+Megabarns                               !Cross-section unit
+False                                   !Split J levels
+3944                                    !Total number of data pairs
+
+ Summary of Photoionization routes for AlIII
+ Final State/Phot ID                       1
+ 2s2_2p6_1Se                               T
+ [Reference] Al\,{\sc iii} collsion strengths are from \cite{LWB09_Na_seq_col}.
+
+
+********************************************************************************
+
+                 Energy Levels and statistical weights for Al II
+
+          Data for transitions with n =< 11, and l<=3 are from the
+             Opacity project.
+          Data for transitions with nl =< 10, nup >=12, and l=s,p or d
+             are scaled hydrogenic values.
+          All other data values are hydrogenic.
+
+          Energy levels are from NIST when available, or based on a estimate
+            of the quantum defect.
+
+********************************************************************************
+
+14-Aug-1997                                      !Date
+156                                              !Number of energy levels
+151862.5000                                      !Ionization energy
+2.0                                              !Screened nuclear charge
+3490                                             !Number of transitions
+ Final number of transitions found is:    171
+
+
+******************************************************************************
+
+       Photoionization cross-sections for
+
+>> Verner high energy tail included for gnd level
+>> Opacity project data smoothed by phot_smooth.f
+>>   Smoothed with a gausian of width 3000 km/sec
+
+          Types of cross sections included:
+         -----------------------------------
+
+          20 - Opacity Project: smoothed [number of data pairs]
+          21 - Opacity Project: scaled, smoothed [number of data pairs]
+
+******************************************************************************
+
+24-May-1996                             !Date
+138                                     !Number of energy levels
+1                                       !Number of photoionization routes
+2.0                                     !Screened nuclear charge
+3s2Se/3s_2Se                            !Final state in ion
+0.0                                     !Excitation energy of final state
+2.0                                     !Statistical weight of ion
+3000.0                                  !Sigma used for Gaussian smoothing (km/s)
+Megabarns                               !Cross-section unit
+False                                   !Split J levels
+17446                                   !Total number of data pairs
+
+ Summary of Photoionization routes for Al2
+ Final State/Phot ID                       1
+ 3s_2Se                                    T
+************************************************************************************************************************
+
+                 Energy Levels and statistical weights for SkIV
+
+ [Reference] Si\,{\sc IV} oscillator strengths were computed as part of the opacity project
+ [Reference] \citep{Sea87_OP} and were obtained from \citep{Topbase93}. These have been modified using
+ [Reference] values from \cite{NIST_V5} (2012-10-14).
+
+
+                   g        E(cm^-1)    10^15 Hz     eV       Lam(A)       ID      ARAD         C4          C6
+************************************************************************************************************************
+
+17-Oct-2000                                      !Format date
+66                                               !Number of energy levels
+364093.0000                                      !Ionization energy
+4.0                                              !Screened nuclear charge
+1112                                             !Number of transitions
+ Final number of transitions found is:    418
+
+
+************************************************************************************************************
+
+       Photoionization cross-sections for Si IV
+
+ Data is from the Opacity project
+   Verner high energy tail included for gnd level
+   Smoothed with a gaussian of width 3000 km/sec
+
+          Types of cross sections included:
+         -----------------------------------
+
+          20 - Opacity Project: smoothed [number of data pairs]
+                 f cross-sections replaced as only partial cross-sections.
+                 (include 2 -> 3 but not 4 -> 3)
+           2 - Hydrogenic (for l states 3 and above)
+
+ [Reference] Si\,{\sc iv} photoionization cross-sections were computed as part of the opacity project
+ [Reference] \citep{Sea87_OP} and were obtained from \citep{Topbase93}.
+
+************************************************************************************************************
+
+24-May-1996                             !Date
+55                                      !Number of energy levels
+1                                       !Number of photoionization routes
+4.0                                     !Screened nuclear charge
+2p6_1Se                                 !Final state in ion
+0.0                                     !Excitation energy of final state
+1.0                                     !Statistical weight of ion
+3000.0                                  !Sigma used for Gaussian smoothing (km/s)
+Megabarns                               !Cross-section unit
+False                                   !Split J levels
+3800                                    !Total number of data pairs
+
+ Summary of Photoionization routes for SkIV
+ Final State/Phot ID                       1
+ 2p6_1Se                                   T
+ [Reference] Si\,{\sc iv} collision strengths (for $n < 7$) are from \cite{LWB09_Na_seq_col}.
+************************************************************************************************************************************
+
+                 Energy Levels and statistical weights for Si III
+                 Intercombination transitions from Butler & Mendoza (1983)
+                 C4 and c6 are from Kurucz (added 18-Mar-2015).
+
+ [Reference] Si\,{\sc iii} oscillator strengths were computed by \cite{BKM93_Mg_seq} as part of the opacity
+ [Reference] project \citep{Sea87_OP} and were obtained from \citep{Topbase93}.
+ [Reference] Data for Si\,{\sc iii} intercombination transitions are from ?
+
+                  g          E(cm^-1)     10^15 Hz      eV        Lam(A)       ID      ARAD         C4          C6
+************************************************************************************************************************************
+
+17-Jun-2014                                      !Format date
+147                                              !Number of energy levels
+270139.3000                                      !Ionization energy
+3.0                                              !Screened nuclear charge
+1639                                             !Number of transitions
+ Final number of transitions found is:    297
+
+
+******************************************************************************
+
+       Photoionization cross-sections for Si III
+
+>> Data is from the Opacity project
+>>   Verner high energy tail included for gnd level
+>>   Smoothed with a gausian of width 3000 km/sec
+
+          Types of cross sections included:
+         -----------------------------------
+
+          20 - Opacity Project: smoothed [number of data pairs]
+
+          21 - Opacity Project: scaled, smoothed [number of data pairs]
+
+           2 - Hydrogenic levels (added 12-Nov-1996)
+
+ [Reference] Si\,{\sc iii} photoionization cross-sections were computed by \cite{BKM93_Mg_seq} as part of the opacity
+ [Reference] project \citep{Sea87_OP} and were obtained from \citep{Topbase93}.
+
+******************************************************************************
+
+24-May-1996                             !Date
+100                                     !Number of energy levels
+1                                       !Number of photoionization routes
+3.0                                     !Screened nuclear charge
+3s2Se/3s_2Se                            !Final state in ion
+0.0                                     !Excitation energy of final state
+2.0                                     !Statistical weight of ion
+3000.0                                  !Sigma used for Gaussian smoothing (km/s)
+Megabarns                               !Cross-section unit
+False                                   !Split J levels
+21912                                   !Total number of data pairs
+
+ Summary of Photoionization routes for SkIII
+ Final State/Phot ID                       1
+ 3s_2Se                                    T
+************************************************************************************************************************
+
+                 Energy Levels and statistical weights for S2
+
+  [Reference] Oscillator strengths for Si\,{\sc ii} are from \citep{N98_SiII_osc}.
+  [Reference] Hydrogenic values for upper levels.
+
+
+                             g        E(cm^-1)    10^15 Hz     eV       Lam(A)       ID      ARAD         C4          C6
+************************************************************************************************************************
+
+17-Oct-2000                                      !Format date
+113                                              !Number of energy levels
+131838.0000                                      !Ionization energy
+2.0                                              !Screened nuclear charge
+2294                                             !Number of transitions
+ Final number of transitions found is:    341
+
+
+************************************************************************************************************************************
+
+       Photoionization cross-sections for Si II
+
+  >> Data is from the Opacity project
+  >>   Verner high energy tail included for gnd level
+  >>   Smoothed with a gausian of width 3000 km/sec
+
+          Types of cross sections included:
+         -----------------------------------
+
+	   2-  Hydrogenic (n,l)
+	   3 - Hydrogenic (n)
+          20 - Opacity Project: smoothed [number of data pairs]
+          21 - Opacity Project: scaled, smoothed [number of data pairs]
+
+ [Reference] photoionization cross-sections for Si\,{\sc ii} were computed as part of the Opacity Project by \cite{MEL95_Al_seq}.
+
+**********************************************************************************************************************************
+
+04-Sep-1997                             !Date
+85                                      !Number of energy levels
+1                                       !Number of photoionization routes
+2.0                                     !Screened nuclear charge
+3s21Se                                  !Final state in ion
+0.0                                     !Excitation energy of final state
+1.0                                     !Statistical weight of ion
+3000.0                                  !Sigma used for Gaussian smoothing (km/s)
+Megabarns                               !Cross-section unit
+False                                   !Split J levels
+9742                                    !Total number of data pairs
+
+ Summary of Photoionization routes for Sk2
+ Final State/Phot ID                       1
+ 3s21Se                                    T
+ [Reference] Si\,{\sc ii} collision strengths among the first 31 energy levels are from \citep{Tay08_SiII_col}.
+************************************************************************************************************************
+
+                 Energy Levels and statistical weights for SIV
+
+ [Reference] S\,{\sc iv} oscillator strengths are from the opacity project
+ [Reference] \citep{Sea87_op}, and were retrieved from Topbase \citep{Topbase93}.
+ [Reference] Intercombination data for S\,{\sc iv} is from the compilation of \cite{Men83_col}.
+
+                              g        E(cm^-1)    10^15 Hz     eV       Lam(A)       ID      ARAD       GAM2        GAM4
+************************************************************************************************************************
+
+17-Oct-2000                                      !Format date
+194                                              !Number of energy levels
+380870.0000                                      !Ionization energy
+4.0                                              !Screened nuclear charge
+3598                                             !Number of transitions
+ Final number of transitions found is:    385
+
+
+******************************************************************************
+
+       Photoionization cross-sections for S IV
+
+>> Data is from the Opacity project
+>>   Smoothed with a gausian of width 3000 km/sec
+
+          Types of cross sections included:
+         -----------------------------------
+
+           1 - Seaton formula fit [sigma_o,alpha,beta]
+           2 - Hydrogenic (n,l)
+	   3 - Hydrogenic (n)
+	  20 - Opacity Project: smoothed [number of data pairs]
+
+ [Reference] S\,{\sc iv} photoionization cross-sections were computed as part of the opacity project
+ [Reference] \citep{Sea87_OP} and were obtained from \citep{Topbase93}.
+
+******************************************************************************
+
+19-Nov-2007                             !Date
+124                                     !Number of energy levels
+1                                       !Number of photoionization routes
+4.0                                     !Screened nuclear charge
+3s2_1Se/3s21Se                          !Final state in ion
+0.0                                     !Excitation energy of final state
+1.0                                     !Statistical weight of ion
+0.00                                    !Sigma used for Gaussian smoothing (km/s)
+Megabarns                               !Cross-section unit
+False                                   !Split J levels
+73553                                   !Total number of data pairs
+
+ Summary of Photoionization routes for SIV
+ Final State/Phot ID                       1
+ 3s2_1Se                                   T
+ [Reference] Collisional data for S\,{\sc iv} is from \cite{Tay00_SIV_col{.
+************************************************************************************************************************
+
+                 Energy Levels and statistical weights for SIII
+
+         Reference: Huang, K., 1985, ADNDT, 32, 503 (transitions among 32s_3p2_3Pe)
+         Reference: Mendoza, PN 1973, page 164
+         Reference: Tayal, S. S., 1997, ADNDT, 67, 331 (5Se transition)
+
+
+ [Reference] S\,{\sc iii} oscilator strengths are from were computed by \cite{NP93_SiI} as part of the opacity
+ [Reference] project \citep{Sea87_OP} and were obtained from \citep{Topbase93}. Date for forbidden and intercombination
+ [Reference] transitions is from \cite{Tay97_SIII_forb,Men83_col,Hua85_Si}.
+
+                          g        E(cm^-1)    10^15 Hz     eV       Lam(A)       ID      ARAD       GAM2        GAM4
+************************************************************************************************************************
+
+17-Oct-2000                                      !Format date
+380                                              !Number of energy levels
+280600.0000                                      !Ionization energy
+3.0                                              !Screened nuclear charge
+6193                                             !Number of transitions
+ Final number of transitions found is:    811
+
+
+************************************************************************************************************
+
+       Photoionization cross-sections for S III
+
+ Data is from the Opacity project
+   Smoothed with a gausian of width 3000 km/sec
+
+          Types of cross sections included:
+         -----------------------------------
+
+           2 - Hydrogenic (n,l)
+           8 - Hydrogenic (n,l,v)
+          20 - Opacity Project: smoothed [number of data pairs]
+
+ [Reference] S\,{\sc iii} photoionization cross-sections were computed by \cite{NP93_SiI} as part of the opacity
+ [Reference] project \citep{Sea87_OP} and were obtained from \citep{Topbase93}.
+
+************************************************************************************************************
+
+19-Nov-2007                             !Date
+354                                     !Number of energy levels
+1                                       !Number of photoionization routes
+3.0                                     !Screened nuclear charge
+3s2_3p_2Po                              !Final state in ion
+0.0                                     !Excitation energy of final state
+6.0                                     !Statistical weight of ion
+0.0                                     !Sigma used for Gaussian smoothing (km/s)
+Megabarns                               !Cross-section unit
+False                                   !Split J levels
+47785                                   !Total number of data pairs
+
+ Summary of Photoionization routes for SIII
+ Final State/Phot ID                       1
+ 3s2_3p_2Po                                T
+ [Reference] Collision strengths for S\,{iii} are from \cite{TG99_SIII_col}.
+************************************************************************************************************************
+
+                 Energy Levels and statistical weights for S2
+
+ [Reference] Oscilator strengths for 70 levels of S\,{\sc ii} are from \citep{Tay08_SiII_col}
+ [Reference] These data replace older data taken from \citep{Kur09_ATD,Kur_wb}.
+
+                               g        E(cm^-1)    10^15 Hz     eV       Lam(A)       ID      ARAD         C4          C6
+************************************************************************************************************************
+
+17-Oct-2000                                      !Format date
+324                                              !Number of energy levels
+188232.7000                                      !Ionization energy
+2.0                                              !Screened nuclear charge
+8464                                             !Number of transitions
+ Final number of transitions found is:   6596
+
+
+******************************************************************************
+
+       Photoionization cross-sections for S II
+
+  Data is from the Opacity project
+  Date is not smoothed.
+  Ground state power law replaced with out-shell fit from Verner.
+
+          Types of cross sections included:
+         -----------------------------------
+
+           1 - Seaton formula fit [sigma_o,alpha,beta]
+           2 - Hydrogenic (n,l)
+           3 - Hydrogenic (n)
+           8 - Offset hydrogenic (n,l,v)
+          20 - Opacity Project: smoothed [number of data pairs]
+
+   [Reference] Photoionization cross-sections from the opacity project \citep{Sea87_OP,Topbase93}.
+   [Reference] High energy tail for ground state (outer shell) from \citep{VFK96_phot_analytic}.
+
+******************************************************************************
+
+28-Sep-2000                             !Date
+232                                     !Number of energy levels
+1                                       !Number of photoionization routes
+2.0                                     !Screened nuclear charge
+3s2_3p2_3Pe                             !Final state in ion
+0.0                                     !Excitation energy of final state
+9.0                                     !Statistical weight of ion
+0.0                                     !Sigma used for Gaussian smoothing (km/s)
+Megabarns                               !Cross-section unit
+False                                   !Split J levels
+200703                                  !Total number of data pairs
+
+ Summary of Photoionization routes for S2
+ Final State/Phot ID                       1
+ 3s2_3p2_3Pe                               T
+ [Reference] Collisional data for 70 levels of S\,{\sc ii} is from \citep{Tay08_SiII_col}.
+************************************************************************************************************************
+
+                 Energy Levels and statistical weights for ClIV
+
+                           g        E(cm^-1)    10^15 Hz     eV       Lam(A)       ID      ARAD       GAM2        GAM4
+************************************************************************************************************************
+
+17-Oct-2000                                      !Format date
+379                                              !Number of energy levels
+431226.0000                                      !Ionization energy
+4.0                                              !Screened nuclear charge
+8612                                             !Number of transitions
+ Final number of transitions found is:      0
+
+**********************************************************************
+**********************************************************************
+
+Very crude photoionization cross-sections for ClIV
+
+**********************************************************************
+**********************************************************************
+
+14-Feb-2001 10:58:40                   !Date
+355                                    !Number of energy levels
+1                                      !Number of photoionization routes
+4.0                                    !Screened nuclear charge
+3p_2Po                                 !Final state in ion
+0.0                                    !Excitation energy of final state
+6.0                                    !Statistical weight of ion
+0.0                                    !Sigma used for Gaussian smoothing (km/s)
+Megabarns                              !Cross-section unit
+False                                  !Split J levels
+1065                                   !Total number of data pairs
+
+ Summary of Photoionization routes for ClIV
+ Final State/Phot ID                       1
+ 3p_2Po                                    T
+********************************************************************************
+
+                 Energy Levels and statistical weights for ArIII
+
+    Data is from the Opacity Project
+         Maximum energy included = Ionization energy =>   332477.
+    Data is from NIST
+         Maximum energy included = Ionization energy =>   328550.
+         Packed according to J states by pack.f
+    Data from the Opacity Project rewritten with NIST energies
+         54 energies from NIST included
+         228 energies from the Opacity Project scaled by  0.9778:
+         Oscillator strengths scaled to conserve (g*f)/(h*nu)
+    Data from NIST: Split energy levels inserted
+         gf values split using REWRITE_OSC_V2
+    Data from Kurucz
+         Kurucz gf values inserted where possible
+    Data from Mendoza.
+         Intercombination transition inserted
+
+                             g        E(cm^-1)      10^15 Hz     eV       Lam(A)       ID      ARAD       GAM2        GAM4
+************************************************************************************************************************
+
+17-Oct-2000                                      !Format date
+346                                              !Number of energy levels
+328550.0000                                      !Ionization energy
+3.0                                              !Screened nuclear charge
+6901                                             !Number of transitions
+ Final number of transitions found is:   5463
+
+
+******************************************************************************
+
+       Photoionization cross-sections for Ar III
+
+>> Data is from the Opacity project
+>>   Smoothed with a gausian of width 3000 km/sec
+
+          Types of cross sections included:
+         -----------------------------------
+
+           1 - Seaton formula fit [sigma_o,alpha,beta]
+
+          20 - Opacity Project: smoothed [number of data pairs]
+
+******************************************************************************
+
+21-Nov-2007                             !Date
+282                                     !Number of energy levels
+1                                       !Number of photoionization routes
+3.0                                     !Screened nuclear charge
+3s2_3p3_4So                             !Final state in ion
+0.0                                     !Excitation energy of final state
+4.0                                     !Statistical weight of ion
+0.00                                    !Sigma used for Gaussian smoothing (km/s)
+Megabarns                               !Cross-section unit
+False                                   !Split J levels
+128695                                  !Total number of data pairs
+
+ Summary of Photoionization routes for ArIII
+ Final State/Phot ID                       1
+ 3s2_3p3_4So                               T
+************************************************************************************************************************
+
+                 Energy Levels and statistical weights for JNK
+
+ [Reference] Oscillator strengths were combuted by \citep{Kur09_ATD] and were obtained from
+ [Reference] \cite{Kur_web} (Kurucz log: 1-Sep-2011).
+
+                                     g        E(cm^-1)    10^15 Hz     eV       Lam(A)       ID      ARAD         C4          C6
+************************************************************************************************************************
+
+17-Oct-2000                                      !Format date
+918                                              !Number of energy levels
+222850.6000                                      !Ionization energy
+2.0                                              !Screened nuclear charge
+79388                                            !Number of transitions
+ Final number of transitions found is:  10385
+
+******************************************************************************************
+******************************************************************************************
+
+   Photoionization cross-sections for ArII
+
+ [Reference] Ar\,{\sc ii} photoionization cross-sections are from \citep{HBE93_IP}.
+
+******************************************************************************************
+******************************************************************************************
+
+07-Sep-2011 10:10:31                   !Date
+466                                    !Number of energy levels
+1                                      !Number of photoionization routes
+2.0                                    !Screened nuclear charge
+3s2_3p4_3Pe                            !Final state in ion
+0.0                                    !Excitation energy of final state
+9.0                                    !Statistical weight of ion
+0.0D0                                  !Sigma used for Gaussian smoothing (km/s
+Megabarns                              !Cross-section unit
+False                                  !Split J levels
+18757                                  !Total number of data pairs
+
+ Summary of Photoionization routes for Ar2
+ Final State/Phot ID                       1
+ 3s2_3p4_3Pe                               T
+ [Reference] Ar\,{\sc ii} collision strengths \citep{TH96_ArII_col}
+************************************************************************************************************************
+
+                 Energy Levels and statistical weights for
+
+ [Reference] Ar\,{\sc i} oscillator strengths were obtained from \citep[NIST] (17-Aug-11)
+
+
+                                      g        E(cm^-1)    10^15 Hz     eV       Lam(A)       ID      ARAD         C4          C6
+************************************************************************************************************************
+
+17-Oct-2000                                      !Format date
+203                                              !Number of energy levels
+127109.8000                                      !Ionization energy
+1.0                                              !Screened nuclear charge
+3824                                             !Number of transitions
+ Final number of transitions found is:   1308
+
+***********************************************************************************************
+
+       Photoionization cross-sections for Ar I
+
+ Data is from the Opacity project
+ Data is unsmoothed.
+
+          Types of cross sections included:
+         -----------------------------------
+
+           1 - Seaton formula fit [sigma_o,alpha,beta]
+          20 - Opacity Project: smoothed [number of data pairs]
+
+ [Reference] Ar\,{\sc I} photoionization cross-sections were computed as part of the opacity project
+ [Reference] \citep{Sea87_OP} and were obtained from \citep{Topbase93}.
+ [Reference] The LS Ar\,{\sc i} photoionization cross-sections were modified according to \cite{Sea_NeI_phot}
+ [Reference] using Ar\,{\sc i} mixing coefficients computed at http://aphysics2.lanl.gov/tempweb/lanl/
+
+**************************************************************************************************
+
+04-Sep-2011                             !Date
+203                                     !Number of energy levels
+1                                       !Number of photoionization routes
+1.0                                     !Screened nuclear charge
+3s2_3p5_2Po                             !Final state in ion
+0.0                                     !Excitation energy of final state
+6.0                                     !Statistical weight of ion
+0.00                                    !Sigma used for Gaussian smoothing (km/s)
+Megabarns                               !Cross-section unit
+True                                    !Split J levels
+62518                                   !Total number of data pairs
+
+ Summary of Photoionization routes for ArI
+ Final State/Phot ID                       1
+ 3s2_3p5_2Po                               T
+************************************************************************************************************************
+
+                 Energy Levels and statistical weights for KIII
+
+                          g        E(cm^-1)    10^15 Hz     eV       Lam(A)       ID      ARAD       GAM2        GAM4
+************************************************************************************************************************
+
+17-Oct-2000                                      !Format date
+40                                               !Number of energy levels
+369450.0000                                      !Ionization energy
+3.0                                              !Screened nuclear charge
+220                                              !Number of transitions
+ Final number of transitions found is:      0
+
+**********************************************************************
+**********************************************************************
+
+Very crude photoionization cross-sections for KIII
+
+**********************************************************************
+**********************************************************************
+
+12-Feb-2001 22:58:33                   !Date
+20                                     !Number of energy levels
+1                                      !Number of photoionization routes
+3.0                                    !Screened nuclear charge
+3p4_3Pe                                !Final state in ion
+0.0                                    !Excitation energy of final state
+9.0                                    !Statistical weight of ion
+0.0                                    !Sigma used for Gaussian smoothing (km/s)
+Megabarns                              !Cross-section unit
+False                                  !Split J levels
+60                                     !Total number of data pairs
+
+ Summary of Photoionization routes for KIII
+ Final State/Phot ID                       1
+ 3p4_3Pe                                   T
+
+********************************************************************************
+
+                 Energy Levels and statistical weights for CaIV
+
+********************************************************************************
+
+15-Apr-1999                                      !Date
+378                                              !Number of energy levels
+541200.0000                                      !Ionization energy
+4.0                                              !Screened nuclear charge
+8532                                             !Number of transitions
+ Final number of transitions found is:    321
+
+
+**************************************************************************************************
+
+       Photoionization cross-sections for Ca IV
+
+>> Data is from the Opacity project
+>>   Verner high energy tail included for gnd level
+>>   Smoothed with a gausian of width 3000 km/sec
+
+          Types of cross sections included:
+         -----------------------------------
+
+           1 - Seaton formula fit [sigma_o,alpha,beta]
+           2 - Hydrogenic (n,l)
+           3 - Hydrogenic (n)
+          20 - Opacity Project: smoothed [number of data pairs]
+
+ [Reference] Ca\,{\sc iv} photoionization cross-sections were computed as part of the opacity project
+ [Reference] \citep{Sea87_OP} and were obtained from \citep{Topbase93}.
+
+**************************************************************************************************
+
+13-Apr-1999                             !Date
+338                                     !Number of energy levels
+1                                       !Number of photoionization routes
+4.0                                     !Screened nuclear charge
+3s2_3p4_3Pe                             !Final state in ion
+0.0                                     !Excitation energy of final state
+9.0                                     !Statistical weight of ion
+3000.0                                  !Sigma used for Gaussian smoothing (km/s)
+Megabarns                               !Cross-section unit
+False                                   !Split J levels
+59574                                   !Total number of data pairs
+
+ Summary of Photoionization routes for CaIV
+ Final State/Phot ID                       1
+ 3s2_3p4_3Pe                               T
+
+********************************************************************************
+
+                 Energy Levels and statistical weights for CaIII
+
+ [Reference] Ca\,{\sc iii} oscillator strengths are from the opacity project
+ [Reference] \citep{Sea87_op}, and were retrieved from Topbase \citep{Topbase93}.
+
+********************************************************************************
+
+15-Apr-1999                                      !Date
+232                                              !Number of energy levels
+410614.1000                                      !Ionization energy
+3.0                                              !Screened nuclear charge
+3497                                             !Number of transitions
+ Final number of transitions found is:    108
+
+
+************************************************************************************************************
+
+       Photoionization cross-sections for Ca III
+
+>> Data is from the Opacity project
+>>   Verner high energy tail included for gnd level
+>>   Smoothed with a gausian of width 3000 km/sec
+
+          Types of cross sections included:
+         -----------------------------------
+
+           1 - Seaton formula fit [sigma_o,alpha,beta]
+           2 - Hydrogenic (n,l)
+           3 - Hydrogenic (n)
+          20 - Opacity Project: smoothed [number of data pairs]
+
+ [Reference] Ca\,{\sc iii} photoionization cross-sections were computed as part of the opacity project
+ [Reference] \citep{Sea87_OP} and were obtained from \citep{Topbase93}.
+
+************************************************************************************************************
+
+13-Apr-1999                             !Date
+213                                     !Number of energy levels
+1                                       !Number of photoionization routes
+3.0                                     !Screened nuclear charge
+3s2_3p5_2Po                             !Final state in ion
+0.0                                     !Excitation energy of final state
+6.0                                     !Statistical weight of ion
+3000.0                                  !Sigma used for Gaussian smoothing (km/s)
+Megabarns                               !Cross-section unit
+False                                   !Split J levels
+50657                                   !Total number of data pairs
+
+ Summary of Photoionization routes for CaIII
+ Final State/Phot ID                       1
+ 3s2_3p5_2Po                               T
+
+********************************************************************************
+
+                 Energy Levels and statistical weights for Ca II.
+
+          Data for transitions with n =< 10, and l<=3 are from the
+             Opacity project.
+          Data for transitions with nl =< 9, nup >=11, and l=s,p or d
+             are scaled hydrogenic values.
+          All other data values are hydrogenic.
+
+          Energy levels are from NIST when available, or based on a
+             estimate of the quantum defect.
+
+ [Reference] Ca\,{\sc ii} oscilator strengths are from the opacity project
+ [Reference] \citep{Sea87_op}, and was retrieved from Topbase \citep{Topbase93}.
+
+********************************************************************************
+
+14-Aug-1997                                      !Date
+77                                               !Number of energy levels
+95752.0000                                       !Ionization energy
+2.0                                              !Screened nuclear charge
+1736                                             !Number of transitions
+ Final number of transitions found is:   1619
+
+
+******************************************************************************
+
+       Photoionization cross-sections for Ca II
+
+>> Data is from the Opacity project
+>>   Verner high energy tail included for gnd level
+>>   Smoothed with a gausian of width 3000 km/sec
+
+          Types of cross sections included:
+         -----------------------------------
+
+          20 - Opacity Project: smoothed [number of data pairs]
+          21 - Opacity Project: scaled, smoothed [number of data pairs]
+           2 - Hydrogenic: Split l (z states, n > 11)
+           3 - Hydrogenic: Pure n level (all l, n >= 12)
+
+ [Reference] Ca\,{\sc ii} photoionization data is from the opacity project
+ [Reference] \citep{Sea87_op}, and was retrieved from Topbase \citep{Topbase93}.
+
+******************************************************************************
+
+12-Mar-1997                             !Date
+70                                      !Number of energy levels
+1                                       !Number of photoionization routes
+2.0                                     !Screened nuclear charge
+3s23p61Se/3s2_3p6_1Se                   !Final state in ion
+0.0                                     !Excitation energy of final state
+1.0                                     !Statistical weight of ion
+3000.0                                  !Sigma used for Gaussian smoothing (km/s)
+Megabarns                               !Cross-section unit
+False                                   !Split J levels
+1954                                    !Total number of data pairs
+
+ Summary of Photoionization routes for Ca2
+ Final State/Phot ID                       1
+ 3s2_3p6_1Se                               T
+ [Reference] Ca\,{\sc ii} collsion strengths are from \itep{MBB07_CaII_data,MBB07_CaII_col}
+************************************************************************************************************************
+
+                 Energy Levels and statistical weights for ScIII
+                 Oscilator strengths from Kurucz  (http://kurucz.harvard.edu/)
+                 Energy levels Kurucz.
+
+                     g        E(cm^-1)    10^15 Hz     eV       Lam(A)       ID      ARAD       GAM2        GAM4
+************************************************************************************************************************
+
+17-Oct-2000                                      !Format date
+87                                               !Number of energy levels
+199677.3700                                      !Ionization energy
+3.0                                              !Screened nuclear charge
+687                                              !Number of transitions
+ Final number of transitions found is:    231
+
+**********************************************************************
+**********************************************************************
+
+ Sc III
+
+Ground-state photoionization cross-section from
+
+@ARTICLE{1995A&AS..109..125V,
+   author = {{Verner}, D.~A. and {Yakovlev}, D.~G.},
+    title = "{Analytic FITS for partial photoionization cross sections.}",
+  journal = {\aaps},
+ keywords = {ATOMIC DATA, ATOMIC PROCESSES},
+     year = 1995,
+    month = jan,
+   volume = 109,
+    pages = {125-133},
+   adsurl = {http://adsabs.harvard.edu/abs/1995A%26AS..109..125V},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+  Others very crude hydrogen-like:
+
+**********************************************************************
+**********************************************************************
+
+13-Oct-2009 18:56:33                   !Date
+47                                     !Number of energy levels
+1                                      !Number of photoionization routes
+3.0                                    !Screened nuclear charge
+3p6_1Se            [                   !Final state in ion
+0.0                                    !Excitation energy of final state
+1.0                                    !Statistical weight of ion
+0.00                                   !Sigma used for Gaussian smoothing (km/s)
+Megabarns                              !Cross-section unit
+False                                  !Split J levels
+162                                    !Total number of data pairs
+
+ Summary of Photoionization routes for ScIII
+ Final State/Phot ID                       1
+ 3p6_1Se[                                  T
+************************************************************************************************************************
+
+                 Energy Levels and statistical weights for Sc2
+
+                                      g        E(cm^-1)    10^15 Hz     eV       Lam(A)       ID      ARAD       GAM2        GAM4
+************************************************************************************************************************
+
+17-Oct-2000                                      !Format date
+908                                              !Number of energy levels
+103237.1000                                      !Ionization energy
+2.0                                              !Screened nuclear charge
+77253                                            !Number of transitions
+ Final number of transitions found is:    855
+
+
+******************************************************************************
+******************************************************************************
+
+ Except for ground state, crude photoionization cross-sections for ScII
+ Assume 3d2 cross-section similar to d cross-section in 3d_4s ground state
+
+ @ARTICLE{1995A&AS..109..125V,
+   author = {{Verner}, D.~A. and {Yakovlev}, D.~G.},
+    title = "{Analytic FITS for partial photoionization cross sections.}",
+  journal = {\aaps},
+ keywords = {ATOMIC DATA, ATOMIC PROCESSES},
+     year = 1995,
+    month = jan,
+   volume = 109,
+    pages = {125-133},
+   adsurl = {http://adsabs.harvard.edu/abs/1995A%26AS..109..125V},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+******************************************************************************
+******************************************************************************
+
+02-Nov-2009 22:31:35                   !Date
+499                                    !Number of energy levels
+1                                      !Number of photoionization routes
+2.0                                    !Screened nuclear charge
+3d_2De                                 !Final state in ion
+0.0                                    !Excitation energy of final state
+10.0                                   !Statistical weight of ion
+0.00                                   !Sigma used for Gaussian smoothing (km/s)
+Megabarns                              !Cross-section unit
+False                                  !Split J levels
+1682                                   !Total number of data pairs
+
+ Summary of Photoionization routes for Sc2
+ Final State/Phot ID                       1
+ 3d_2De                                    T
+
+********************************************************************************
+
+                 Dielectronic Transitions for Sc2
+                 LTDR transitions with ALPHA(DIE) < 1.00E-04 (*10^-12) ignored
+
+********************************************************************************
+
+03-Nov-2009                                      !Date
+103237.1000                                      !Ionization energy
+2.0000                                           !Screened nuclear charge
+362                                              !Number of dielectronic transitions
+
+
+ Summary of dielectronic transitions included (LS : WI)
+[Units 10^-12] ( ) denotes percentage of LTDR NOT included
+  187( 362)   6.082E-01( 34.41)   3.655E-01( 41.94)   2.550E-01( 44.43)
+************************************************************************************************************************
+
+                 Energy Levels and statistical weights for TkIII
+
+                         g        E(cm^-1)    10^15 Hz     eV       Lam(A)       ID      ARAD       GAM2        GAM4
+************************************************************************************************************************
+
+17-Oct-2000                                      !Format date
+649                                              !Number of energy levels
+221735.6000                                      !Ionization energy
+3.0                                              !Screened nuclear charge
+21722                                            !Number of transitions
+ Final number of transitions found is:   3709
+
+**********************************************************************
+**********************************************************************
+
+Very crude photoionization cross-sections for TkIII
+
+**********************************************************************
+**********************************************************************
+
+22-Nov-2000 13:10:11                   !Date
+358                                    !Number of energy levels
+1                                      !Number of photoionization routes
+3.0                                    !Screened nuclear charge
+3p6_3d_2De/3d_3De                      !Final state in ion
+0.0                                    !Excitation energy of final state
+10.0                                   !Statistical weight of ion
+0.0                                    !Sigma used for Gaussian smoothing (km/s)
+Megabarns                              !Cross-section unit
+False                                  !Split J levels
+1074                                   !Total number of data pairs
+
+ Summary of Photoionization routes for TkIII
+ Final State/Phot ID                       1
+ 3p6_3d_2De                                T
+************************************************************************************************************************
+
+                 Energy Levels and statistical weights for TkII
+
+                            g        E(cm^-1)    10^15 Hz     eV       Lam(A)       ID      ARAD       GAM2        GAM4
+************************************************************************************************************************
+
+17-Oct-2000                                      !Format date
+1000                                             !Number of energy levels
+109494.0000                                      !Ionization energy
+2.0                                              !Screened nuclear charge
+93118                                            !Number of transitions
+ Final number of transitions found is:   1850
+
+**********************************************************************
+**********************************************************************
+
+Very crude photoionization cross-sections for TkII
+
+**********************************************************************
+**********************************************************************
+
+17-Oct-2000 21:40:01                   !Date
+435                                    !Number of energy levels
+1                                      !Number of photoionization routes
+2.0                                    !Screened nuclear charge
+3d2_3Fe                                !Final state in ion
+0.0                                    !Excitation energy of final state
+21.0                                   !Statistical weight of ion
+0.0                                    !Sigma used for Gaussian smoothing (km/s)
+Megabarns                              !Cross-section unit
+False                                  !Split J levels
+1305                                   !Total number of data pairs
+
+ Summary of Photoionization routes for Tk2
+ Final State/Phot ID                       1
+ 3d2_3Fe                                   T
+
+********************************************************************************
+
+                 Energy Levels and statistical weights for VI (garbage file)
+
+********************************************************************************
+
+17Mar-2012 17:06:17                              !Date
+1                                                !Number of energy levels
+55360.0D00                                       !Ionization energy
+1.0                                              !Screened nuclear charge
+0                                                !Number of transitions
+
+
+******************************************************************************
+
+       Photoionization cross-sections for V I
+
+
+
+******************************************************************************
+
+17-Mar-2012                             !Date
+1                                       !Number of energy levels
+1                                       !Number of photoionization routes
+1.0                                     !Screened nuclear charge
+3d2_4s2_3Fe                             !Final state in ion
+0.0                                     !Excitation energy of final state
+1.0                                     !Statistical weight of ion
+3000.0                                  !Sigma used for Gaussian smoothing (km/s)
+Megabarns                               !Cross-section unit
+False                                   !Split J levels
+20                                      !Total number of data pairs
+
+ Summary of Photoionization routes for VI
+ Final State/Phot ID                       1
+ 3d2_4s2_3Fe                               T
+************************************************************************************************************************
+
+                 Energy Levels and statistical weights for CrIV
+
+ [Reference] Cr\,{\sc iv} oscillator strengths are were computed by Bob Kurucz \citep{Kur09_ATD} and were obtained
+ [Reference] from his website \citep{Kur_web} (prior to 2001).
+
+                            g        E(cm^-1)    10^15 Hz     eV       Lam(A)       ID      ARAD       GAM2        GAM4
+************************************************************************************************************************
+
+17-Oct-2000                                      !Format date
+1000                                             !Number of energy levels
+396500.0000                                      !Ionization energy
+4.0                                              !Screened nuclear charge
+67061                                            !Number of transitions
+ Final number of transitions found is:   4453
+
+**********************************************************************
+**********************************************************************
+
+Very crude photoionization cross-sections for CrIV
+
+**********************************************************************
+**********************************************************************
+
+26-Oct-2000 15:11:11                   !Date
+443                                    !Number of energy levels
+1                                      !Number of photoionization routes
+4.0                                    !Screened nuclear charge
+3d2_3Fe                                !Final state in ion
+0.0                                    !Excitation energy of final state
+21.0                                   !Statistical weight of ion
+0.0                                    !Sigma used for Gaussian smoothing (km/s)
+Megabarns                              !Cross-section unit
+False                                  !Split J levels
+1329                                   !Total number of data pairs
+
+ Summary of Photoionization routes for CrIV
+ Final State/Phot ID                       1
+ 3d2_3Fe                                   T
+************************************************************************************************************************
+
+                 Energy Levels and statistical weights for CrIII
+
+ [Reference] Cr\,{\sc iii} oscillator strengths are were computed by Bob Kurucz \citep{Kur09_ATD} and were obtained
+ [Reference] from his website \citep{Kur_web} (prior to 2001).
+
+                              g        E(cm^-1)    10^15 Hz     eV       Lam(A)       ID      ARAD       GAM2        GAM4
+************************************************************************************************************************
+
+17-Oct-2000                                      !Format date
+1000                                             !Number of energy levels
+249700.0000                                      !Ionization energy
+3.0                                              !Screened nuclear charge
+73962                                            !Number of transitions
+ Final number of transitions found is:   1314
+
+**********************************************************************
+**********************************************************************
+
+Very crude photoionization cross-sections for CrIII
+
+**********************************************************************
+**********************************************************************
+
+26-Oct-2000 16:15:23                   !Date
+427                                    !Number of energy levels
+1                                      !Number of photoionization routes
+3.0                                    !Screened nuclear charge
+3d3_4Fe                                !Final state in ion
+0.0                                    !Excitation energy of final state
+28.0                                   !Statistical weight of ion
+0.0                                    !Sigma used for Gaussian smoothing (km/s)
+Megabarns                              !Cross-section unit
+False                                  !Split J levels
+1281                                   !Total number of data pairs
+
+ Summary of Photoionization routes for CrIII
+ Final State/Phot ID                       1
+ 3d3_4Fe                                   T
+************************************************************************************************************************
+
+                 Energy Levels and statistical weights for CrII
+
+ [Reference] Cr\,{\sc ii} oscillator strengths are were computed by Bob Kurucz \citep{Kur09_ATD} and were obtained
+ [Reference] from his website \citep{Kur_web} (prior to 2001). Data for forbidden transitions was obtaned from
+ [Reference] \cite{Qui98_CoII}.
+
+
+
+                             g        E(cm^-1)    10^15 Hz     eV       Lam(A)       ID      ARAD         C4          C6
+************************************************************************************************************************
+
+17-Oct-2000                                      !Format date
+1000                                             !Number of energy levels
+132966.0000                                      !Ionization energy
+2.0                                              !Screened nuclear charge
+66933                                            !Number of transitions
+ Final number of transitions found is:   2452
+
+**********************************************************************
+**********************************************************************
+
+Very crude photoionization cross-sections for CrII
+
+**********************************************************************
+**********************************************************************
+
+04-Dec-2000 18:31:06                   !Date
+372                                    !Number of energy levels
+1                                      !Number of photoionization routes
+2.0                                    !Screened nuclear charge
+3d4_5De                                !Final state in ion
+0.0                                    !Excitation energy of final state
+25.0                                   !Statistical weight of ion
+0.0                                    !Sigma used for Gaussian smoothing (km/s)
+Megabarns                              !Cross-section unit
+False                                  !Split J levels
+1116                                   !Total number of data pairs
+
+ Summary of Photoionization routes for Cr2
+ Final State/Phot ID                       1
+ 3d4_5De                                   T
+  [Reference] Collision rates for Cr~{\sc ii} are from \cite{WRS11_CrII_col}.
+  [Reference] The data was kindly supplied by Cathy Ramsbottom (Queens's University, Belfast).
+************************************************************************************************************************
+
+                 Energy Levels and statistical weights for MnIII
+
+                              g        E(cm^-1)    10^15 Hz     eV       Lam(A)       ID      ARAD       GAM2        GAM4
+************************************************************************************************************************
+
+17-Oct-2000                                      !Format date
+1000                                             !Number of energy levels
+271550.0000                                      !Ionization energy
+3.0                                              !Screened nuclear charge
+70218                                            !Number of transitions
+ Final number of transitions found is:   1549
+
+**********************************************************************
+**********************************************************************
+
+Very crude photoionization cross-sections for MnIII
+
+**********************************************************************
+**********************************************************************
+
+26-Nov-2000 13:55:38                   !Date
+386                                    !Number of energy levels
+1                                      !Number of photoionization routes
+3.0                                    !Screened nuclear charge
+3d4_a5De                               !Final state in ion
+0.0                                    !Excitation energy of final state
+25.0                                   !Statistical weight of ion
+0.0                                    !Sigma used for Gaussian smoothing (km/s)
+Megabarns                              !Cross-section unit
+False                                  !Split J levels
+1158                                   !Total number of data pairs
+
+ Summary of Photoionization routes for MnIII
+ Final State/Phot ID                       1
+ 3d4_a5De                                  T
+************************************************************************************************************************
+
+                 Energy Levels and statistical weights for MnII
+
+                            g        E(cm^-1)    10^15 Hz     eV       Lam(A)       ID      ARAD       GAM2        GAM4
+************************************************************************************************************************
+
+17-Oct-2000                                      !Format date
+1000                                             !Number of energy levels
+126145.0000                                      !Ionization energy
+2.0                                              !Screened nuclear charge
+49066                                            !Number of transitions
+ Final number of transitions found is:    157
+
+**********************************************************************
+**********************************************************************
+
+Very crude photoionization cross-sections for MnII
+
+**********************************************************************
+**********************************************************************
+
+26-Nov-2000 13:39:01                   !Date
+333                                    !Number of energy levels
+1                                      !Number of photoionization routes
+2.0                                    !Screened nuclear charge
+3d5_a6Se                               !Final state in ion
+0.0                                    !Excitation energy of final state
+6.0                                    !Statistical weight of ion
+0.0                                    !Sigma used for Gaussian smoothing (km/s)
+Megabarns                              !Cross-section unit
+False                                  !Split J levels
+999                                    !Total number of data pairs
+
+ Summary of Photoionization routes for Mn2
+ Final State/Phot ID                       1
+ 3d5_a6Se                                  T
+************************************************************************************************************************
+
+                 Energy Levels and statistical weights for FeV
+
+ [Reference] Oscillator strengths for Fe\,{\sc v} were computed by Bob Kurucz \citep{Kur09_ATD} and were obtained from
+ [Reference] his website \citep{Kur_web} (before 2001).
+
+g        E(cm^-1)    10^15 Hz     eV       Lam(A)       ID      ARAD       GAM2        GAM4
+************************************************************************************************************************
+
+17-Oct-2000                                      !Format date
+1000                                             !Number of energy levels
+596627.0000                                      !Ionization energy
+5.0                                              !Screened nuclear charge
+71983                                            !Number of transitions
+ Final number of transitions found is:   2323
+
+************************************************************************************************
+************************************************************************************************
+
+ Photoionization cross-sections for FeV
+ Most of the data is from the Opacity project:
+       Smoothed with a Gausian of width 3000 km/sec
+       Types of cross sections included:
+       -----------------------------------
+           1 - Seaton formula fit [sigma_o,alpha,beta]
+          20 - Opacity Project: smoothed [number of data pai
+
+ [Reference] Fe\,{\sc v`} photoionization cross-sections were computed as part of
+ [Reference] the opacity project \citep{Sea87_OP} and were obtained from TOPbase \citep{Topbase93}.
+
+************************************************************************************************
+************************************************************************************************
+
+16-Oct-2000 11:45:16                   !Date
+425                                    !Number of energy levels
+1                                      !Number of photoionization routes
+5.                                     !Screened nuclear charge
+3d3_4Fe/3d3(3)4Fe                      !Final state in ion
+0.                                     !Excitation energy of final state
+28.0                                   !Statistical weight of ion
+3000.0                                 !Sigma used for Gaussian smoothing (km/s)
+Megabarns                              !Cross-section unit
+False                                  !Split J levels
+21665                                  !Total number of data pairs
+
+ Summary of Photoionization routes for FeV
+ Final State/Phot ID                       1
+ 3d3_4Fe                                   T
+************************************************************************************************************************
+
+                 Energy Levels and statistical weights for FeIV
+
+                             g        E(cm^-1)    10^15 Hz     eV       Lam(A)       ID      ARAD       GAM2        GAM4
+************************************************************************************************************************
+
+17-Oct-2000                                      !Format date
+1000                                             !Number of energy levels
+442000.0000                                      !Ionization energy
+4.0                                              !Screened nuclear charge
+72223                                            !Number of transitions
+ Final number of transitions found is:  37848
+
+**********************************************************************
+**********************************************************************
+
+ Photoionization cross-sections for FeIV
+ Smooth Opacity project (3000km/s) cross-sections.
+ Crude hydrogenic when unavailable.
+ Ground term corss-sections fixed 22-May-2003.
+
+**********************************************************************
+**********************************************************************
+
+04-Nov-2000 00:04:27                   !Date
+383                                    !Number of energy levels
+1                                      !Number of photoionization routes
+4.0                                    !Screened nuclear charge
+3d4_5De                                !Final state in ion
+0.0                                    !Excitation energy of final state
+25.0                                   !Statistical weight of ion
+3000.0                                 !Sigma used for Gaussian smoothing (km/s)
+Megabarns                              !Cross-section unit
+False                                  !Split J levels
+15354                                  !Total number of data pairs
+
+ Summary of Photoionization routes for FeIV
+ Final State/Phot ID                       1
+ 3d4_5De                                   T
+ [Reference] Fe\,{\sc iv} collisional data is from \cite{ZP97_FeIV_col}
+************************************************************************************************************************
+
+                 Energy Levels and statistical weights for FeIII
+
+
+ [Reference] Fe\,{\sc iii} oscillator strengths are from \citepKu09_AATD,Kur_web) (before Feb 2005).
+ [Reference] Fe\,{\sc iii} forbidden line data is from \citep{Qui96_FeIII}.
+
+                           g        E(cm^-1)    10^15 Hz     eV       Lam(A)       ID      ARAD         C4          C6
+************************************************************************************************************************
+
+17-Oct-2000                                      !Format date
+1500                                             !Number of energy levels
+247220.0000                                      !Ionization energy
+3.0                                              !Screened nuclear charge
+136060                                           !Number of transitions
+ Final number of transitions found is:  31603
+
+**********************************************************************
+**********************************************************************
+
+
+ Photoioization cross-sections for Fe III
+
+ [Reference] Fe\,{\sc iii} photoionization data is from \citep{Nahar96_FeIII}
+ [Reference] (obtained from Topbase \citep{Topbase93})
+
+**********************************************************************
+**********************************************************************
+
+08-Feb-2005 12:40:14                   !Date
+557                                    !Number of energy levels
+1                                      !Number of photoionization routes
+3.0                                    !Screened nuclear charge
+3d5(5)_6Se/3d5_6Se                     !Final state in ion
+0.0                                    !Excitation energy of final state
+6.0                                    !Statistical weight of ion
+3000.0                                 !Sigma used for Gaussian smoothing (km/s)
+Megabarns                              !Cross-section unit
+False                                  !Split J levels
+54309                                  !Total number of data pairs
+
+ Summary of Photoionization routes for FeIII
+ Final State/Phot ID                       1
+ 3d5_6Se                                   T
+  [Reference] Fe\,{\sc iii} collision rates are from \citep{Zha96_FeIII_col}
+
+********************************************************************************
+
+                 Energy Levels and statistical weights for Fe2
+
+********************************************************************************
+
+12-Jun-1999                                      !Date
+827                                              !Number of energy levels
+130483.0000                                      !Ionization energy
+2.0                                              !Screened nuclear charge
+44831                                            !Number of transitions
+ Final number of transitions found is:  22874
+
+
+******************************************************************************
+
+       Photoionization cross-sections for Fe II
+
+>> Data is from the Opacity project
+>>   Smoothed with a gausian of width 3000 km/sec
+
+          Types of cross sections included:
+         -----------------------------------
+
+           1 - Seaton formula fit [sigma_o,alpha,beta]
+
+          20 - Opacity Project: smoothed [number of data pairs]
+
+          21 - Opacity Project: scaled, smoothed [number of data pairs]
+
+ [Reference] Fe\,{\sc ii} photoionization data is from \citep{NP94_FeII_phot}.
+
+******************************************************************************
+
+24-May-1996                             !Date
+265                                     !Number of energy levels
+1                                       !Number of photoionization routes
+2.0                                     !Screened nuclear charge
+3d65De/3d6_5De                          !Final state in ion
+0.0                                     !Excitation energy of final state
+25.0                                    !Statistical weight of ion
+3000.0                                  !Sigma used for Gaussian smoothing (km/s)
+Megabarns                               !Cross-section unit
+False                                   !Split J levels
+46054                                   !Total number of data pairs
+
+ Summary of Photoionization routes for Fe2
+ Final State/Phot ID                       1
+ 3d6_5De                                   T
+ [Reference] Fe\,{\sc ii} collision strengths \citep{ZP94_FeII_col,ZP95_FeII_col}
+************************************************************************************************************************
+
+                 Energy Levels and statistical weights for FeI
+
+ [Reference] Oscillator strengths for Fe\,{\sc i} were computed by Bob Kurucz \citep{Kur09_ATD} and were obtained from
+ [Reference] his website \citep{Kur_web} in 2004.
+
+                            g        E(cm^-1)    10^15 Hz     eV       Lam(A)       ID      ARAD       GAM2        GAM4
+************************************************************************************************************************
+
+17-Oct-2000                                      !Format date
+1579                                             !Number of energy levels
+63737.0000                                       !Ionization energy
+1.0                                              !Screened nuclear charge
+141821                                           !Number of transitions
+ Final number of transitions found is:    927
+
+**********************************************************************
+**********************************************************************
+
+Very crude photoionization cross-sections for FeI
+
+**********************************************************************
+**********************************************************************
+
+29-Apr-2004 18:56:20                   !Date
+567                                    !Number of energy levels
+1                                      !Number of photoionization routes
+1.0                                    !Screened nuclear charge
+3d6(5D)4sa6De/3d6(5D)4s_a6De           !Final state in ion
+0.0                                    !Excitation energy of final state
+30.0                                   !Statistical weight of ion
+0.0                                    !Sigma used for Gaussian smoothing (km/s)
+Megabarns                              !Cross-section unit
+False                                  !Split J levels
+646457                                 !Total number of data pairs
+
+ Summary of Photoionization routes for FeI
+ Final State/Phot ID                       1
+ 3d6(5D)4sa6De                             T
+************************************************************************************************************************
+
+                 Energy Levels and statistical weights for CoV
+
+                            g        E(cm^-1)    10^15 Hz     eV       Lam(A)       ID      ARAD       GAM2        GAM4
+************************************************************************************************************************
+
+17-Oct-2000                                      !Format date
+1000                                             !Number of energy levels
+641000.0000                                      !Ionization energy
+5.0                                              !Screened nuclear charge
+75923                                            !Number of transitions
+ Final number of transitions found is:   7499
+
+**********************************************************************
+**********************************************************************
+
+Very crude photoionization cross-sections for CoV
+
+**********************************************************************
+**********************************************************************
+
+28-Nov-2000 21:05:01                   !Date
+392                                    !Number of energy levels
+1                                      !Number of photoionization routes
+5.0                                    !Screened nuclear charge
+3d4_5De                                !Final state in ion
+0.0                                    !Excitation energy of final state
+25.0                                   !Statistical weight of ion
+0.0                                    !Sigma used for Gaussian smoothing (km/s)
+Megabarns                              !Cross-section unit
+False                                  !Split J levels
+1176                                   !Total number of data pairs
+
+ Summary of Photoionization routes for CoV
+ Final State/Phot ID                       1
+ 3d4_5De                                   T
+************************************************************************************************************************
+
+                 Energy Levels and statistical weights for CoIV
+
+ [Reference] Oscillator strengths for Co\,{\sc iv} were computed by Bob Kurucz \citep{Kur09_ATD} and were obtained from
+ [Reference] his website \citep{Kur_web} in 2009 (?).
+ [Reference] Co\,{\sc iv} transition probabilities for forbidden lines are scaled values for Fe\,{\sc iii} which were
+ [Reference[ from \cite{Qui96_[FeIII].
+
+                          g        E(cm^-1)    10^15 Hz     eV       Lam(A)       ID      ARAD         C4          C6
+************************************************************************************************************************
+
+17-Oct-2000                                      !Format date
+1000                                             !Number of energy levels
+413500.0000                                      !Ionization energy
+4.0                                              !Screened nuclear charge
+69803                                            !Number of transitions
+ Final number of transitions found is:  37111
+
+**********************************************************************
+**********************************************************************
+
+  CoIV: Fe III cross-sections scaled by a factor 0.5625
+        Non-opacity are very crude photoionization cross-sections
+
+ [Reference] The Fe\,{\sc iii} photoionization data is from \cite{Nahar96_FeIII}.
+ [Reference] The data was obtained from TOPbase \citep{Topbase93}).
+
+**********************************************************************
+**********************************************************************
+
+28-Nov-2000 20:41:54                   !Date
+404                                    !Number of energy levels
+1                                      !Number of photoionization routes
+4.0                                    !Screened nuclear charge
+3d5_6Se                                !Final state in ion
+0.0                                    !Excitation energy of final state
+6.0                                    !Statistical weight of ion
+0.0                                    !Sigma used for Gaussian smoothing (km/s)
+Megabarns                              !Cross-section unit
+False                                  !Split J levels
+40025                                  !Total number of data pairs
+
+ Summary of Photoionization routes for CoIV
+ Final State/Phot ID                       1
+ 3d5_6Se                                   T
+  [Reference] Fe\,{\sc iii} collision rates are from \citep{Zha96_FeIII_col}
+************************************************************************************************************************
+
+                 Energy Levels and statistical weights for CoIII
+
+ [Reference] Oscillator strengths for Co\,{\sc iii} were computed by Bob Kurucz \citep{Kur09_ATD} and were obtained from
+ [Reference] his website \citep{Kur_web} in 2009 (?).
+ [Reference] Co\,{\sc iii} transition probabilities for forbidden lines in the 3d7 ground configuration are
+ [Reference] from \cite{HRU83_CoIII_forbid}.
+
+                               g        E(cm^-1)    10^15 Hz     eV       Lam(A)       ID      ARAD         C4          C6
+************************************************************************************************************************
+
+17-Oct-2000                                      !Format date
+3917                                             !Number of energy levels
+270200.0000                                      !Ionization energy
+3.0                                              !Screened nuclear charge
+679412                                           !Number of transitions
+ Final number of transitions found is:  36203
+
+****************************************************************************************************
+****************************************************************************************************
+
+ Very crude photoionization cross-sections for CoIII
+
+ [Reference] Co\,{\sc iii} cross-section for the ground state is from \cite{VY95_phot}.
+
+****************************************************************************************************
+****************************************************************************************************
+
+12-Nov-2009 09:01:23                   !Date
+2112                                   !Number of energy levels
+1                                      !Number of photoionization routes
+3.0                                    !Screened nuclear charge
+3d6_5De                                !Final state in ion
+0.0                                    !Excitation energy of final state
+25.0                                   !Statistical weight of ion
+0.0D0                                  !Sigma used for Gaussian smoothing (km/s)
+Megabarns                              !Cross-section unit
+False                                  !Split J levels
+7819                                   !Total number of data pairs
+
+ Summary of Photoionization routes for CoIII
+ Final State/Phot ID                       1
+ 3d6_5De                                   T
+ [Reference] For Co\,{\sc iii} we used the Ni\,{\sc iv} collison strengths from \cite{SNB02_NiIV_col}.
+ [Reference] Ni\,{\sc iv} and Co\,{\sc iii} atoms have similar structures.
+************************************************************************************************************************
+
+     Energy Levels and statistical weights for Co2
+  @ARTICLE{1998A&AS..129..147Q,
+   author = {{Quinet}, P.},
+    title = "{Radiative transition probabilities for forbidden lines in singly ionized cobalt (Co II)}",
+  journal = {\aaps},
+ keywords = {ATOMIC DATA, SUPERNOVAE: GENERAL},
+     year = 1998,
+    month = apr,
+   volume = 129,
+    pages = {147-154},
+      doi = {10.1051/aas:1998176},
+   adsurl = {http://adsabs.harvard.edu/abs/1998A%26AS..129..147Q},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+   }
+
+  Kurucz -- atomic data base.
+
+  [Reference] Co\,{\sc ii} oscillator strengths  were compued by Bob Kurucz \citep[Kur09_ATD] and obtained
+  [Reference] through his website \citep[calculation date:24-Nov-2006][]{Kur_web}
+  [Reference] Co\,{\sc ii} forbidden line oscillatir strengths  \citep[Qui98_CoII]
+
+                                  g        E(cm^-1)    10^15 Hz     eV       Lam(A)       ID      ARAD       GAM2        GAM4
+************************************************************************************************************************
+
+17-Oct-2000                                      !Format date
+2747                                             !Number of energy levels
+137795.0000                                      !Ionization energy
+2.0                                              !Screened nuclear charge
+593559                                           !Number of transitions
+ Final number of transitions found is:  32624
+
+**************************************************************************************
+**************************************************************************************
+
+ Very crude photoionization cross-sections for CoII
+ Altered 9-Nov-2010. Iffset from Type 9 cross-sections removed.
+
+ [Reference] Co\,{\sc ii} ground state photoionization cross-section \citep{Vy95_phot}
+
+**************************************************************************************
+**************************************************************************************
+
+29-Oct-2009 17:22:06                   !Date
+1179                                   !Number of energy levels
+1                                      !Number of photoionization routes
+2.0                                    !Screened nuclear charge
+3d7_4Fe/3d7_a4Fe                       !Final state in ion
+0.0                                    !Excitation energy of final state
+28.0                                   !Statistical weight of ion
+0.0D0                                  !Sigma used for Gaussian smoothing (km/s)
+Megabarns                              !Cross-section unit
+False                                  !Split J levels
+4202                                   !Total number of data pairs
+
+ Summary of Photoionization routes for Co2
+ Final State/Phot ID                       1
+ 3d7_a4Fe                                  T
+ [Reference] Co\,{\sc ii} collisonal data is from \cite{Wat98_CoII_col}.
+************************************************************************************************************************
+
+                 Energy Levels and statistical weights for NkV
+
+                         g        E(cm^-1)    10^15 Hz     eV       Lam(A)       ID      ARAD       GAM2        GAM4
+************************************************************************************************************************
+
+17-Oct-2000                                      !Format date
+1000                                             !Number of energy levels
+613500.0000                                      !Ionization energy
+5.0                                              !Screened nuclear charge
+75541                                            !Number of transitions
+ Final number of transitions found is:   1510
+
+**********************************************************************
+**********************************************************************
+
+Very crude photoionization cross-sections for NkV
+
+**********************************************************************
+**********************************************************************
+
+21-Oct-2000 00:27:48                   !Date
+405                                    !Number of energy levels
+1                                      !Number of photoionization routes
+5.0                                    !Screened nuclear charge
+3d5_6Se                                !Final state in ion
+0.0                                    !Excitation energy of final state
+6.0                                    !Statistical weight of ion
+0.0                                    !Sigma used for Gaussian smoothing (km/s)
+Megabarns                              !Cross-section unit
+False                                  !Split J levels
+1215                                   !Total number of data pairs
+
+ Summary of Photoionization routes for NkV
+ Final State/Phot ID                       1
+ 3d5_6Se                                   T
+************************************************************************************************************************
+
+                 Energy Levels and statistical weights for NkIV
+
+                             g        E(cm^-1)    10^15 Hz     eV       Lam(A)       ID      ARAD       GAM2        GAM4
+************************************************************************************************************************
+
+17-Oct-2000                                      !Format date
+1000                                             !Number of energy levels
+443000.0000                                      !Ionization energy
+4.0                                              !Screened nuclear charge
+72898                                            !Number of transitions
+ Final number of transitions found is:  38059
+
+**********************************************************************
+**********************************************************************
+
+Very crude photoionization cross-sections for NkIV
+
+**********************************************************************
+**********************************************************************
+
+21-Oct-2000 00:29:14                   !Date
+417                                    !Number of energy levels
+1                                      !Number of photoionization routes
+4.0                                    !Screened nuclear charge
+3d6_5De                                !Final state in ion
+0.0                                    !Excitation energy of final state
+25.0                                   !Statistical weight of ion
+0.0                                    !Sigma used for Gaussian smoothing (km/s)
+Megabarns                              !Cross-section unit
+False                                  !Split J levels
+1251                                   !Total number of data pairs
+
+ Summary of Photoionization routes for NkIV
+ Final State/Phot ID                       1
+ 3d6_5De                                   T
+************************************************************************************************************************
+
+                 Energy Levels and statistical weights for NkIII
+
+Reference: Kurucz & Garstang
+
+@ARTICLE{1958MNRAS.118..234G,
+   author = {{Garstang}, R.~H.},
+    title = "{Transition probabilities for forbidden lines of Ni II and Ni III}",
+  journal = {\mnras},
+     year = 1958,
+   volume = 118,
+    pages = {234},
+   adsurl = {http://adsabs.harvard.edu/abs/1958MNRAS.118..234G},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+ [Reference] Oscillator strengths for N\,{\sc iii} were computed by Bob Kurucz \citep{Kur09_ATD} and were obtained from
+ [Reference] \citep{Kur_web} in 2000 (?). Newer calculations are available.
+ [Reference] Forbidden line transition propabilities for Ni\,{\sc iii} are from \cite{Gar58_nk_forbid}.
+
+                                 g        E(cm^-1)    10^15 Hz     eV       Lam(A)       ID      ARAD         C4          C6
+************************************************************************************************************************
+
+17-Oct-2000                                      !Format date
+1000                                             !Number of energy levels
+283800.0000                                      !Ionization energy
+3.0                                              !Screened nuclear charge
+66511                                            !Number of transitions
+ Final number of transitions found is:  32242
+
+**********************************************************************
+**********************************************************************
+
+Very crude photoionization cross-sections for NiIII
+
+**********************************************************************
+**********************************************************************
+
+27-Nov-2000 23:33:17                   !Date
+444                                    !Number of energy levels
+1                                      !Number of photoionization routes
+3.0                                    !Screened nuclear charge
+3d7_4Fe                                !Final state in ion
+0.0                                    !Excitation energy of final state
+28.0                                   !Statistical weight of ion
+0.0                                    !Sigma used for Gaussian smoothing (km/s)
+Megabarns                              !Cross-section unit
+False                                  !Split J levels
+1332                                   !Total number of data pairs
+
+ Summary of Photoionization routes for NkIII
+ Final State/Phot ID                       1
+ 3d7_4Fe                                   T
+ [Reference] Collision strengths (between low lying states of even parity) for Ni\,{iii} are from \cite{WB98_NiIII_col}.
+************************************************************************************************************************
+
+                 Energy Levels and statistical weights for Nk2
+
+ [Reference] Oscillator strengths for Ni\,{\sc ii} were computed by Bob Kurucz \citep{Kur09_ATD} and were obtained from
+ [Reference] his website \citep{Kur_web} in 2009 (?). Forbidden line data is from \cite{QL96_FeI_FeII_col}.
+
+                                 g        E(cm^-1)    10^15 Hz     eV       Lam(A)       ID      ARAD       GAM2        GAM4
+************************************************************************************************************************
+
+17-Oct-2000                                      !Format date
+1000                                             !Number of energy levels
+146541.5600                                      !Ionization energy
+2.0                                              !Screened nuclear charge
+51812                                            !Number of transitions
+ Final number of transitions found is:  33519
+
+******************************************************************************************
+******************************************************************************************
+
+ Photoionization cross-sections for NiII. A couple of values were clipped from original
+ data set. 3 states (the ground state, 3d8(3F)4d_2Ge, 3d8(3F)6s_2Fe) dominate the
+ recombination rates above 20,000 K.
+
+ [Reference] Photoionization cross-sections for Ni\,{sc ii} are from \citep{NB01_NiII}.
+
+******************************************************************************************
+******************************************************************************************
+
+27-Nov-2000 16:07:57                   !Date
+499                                    !Number of energy levels
+1                                      !Number of photoionization routes
+2.0                                    !Screened nuclear charge
+3d8_3Fe                                !Final state in ion
+0.0                                    !Excitation energy of final state
+21.0                                   !Statistical weight of ion
+0.0                                    !Sigma used for Gaussian smoothing (km/s)
+Megabarns                              !Cross-section unit
+False                                  !Split J levels
+890037                                 !Total number of data pairs
+
+ Summary of Photoionization routes for Nk2
+ Final State/Phot ID                       1
+ 3d8_3Fe                                   T
+ [Reference] Ni\,{\sc ii} collisional data is from \citep{Bau02_NiII_col}
