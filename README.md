@@ -1,4 +1,4 @@
-# GAMMAY_RAY_CMFGEN
+# GAMMA_RAY_CMFGEN
 
 This code is integrated into CMFGEN and is to create a synthetic gamma-ray spectrum and energy energy deposition in supernovae (thermonuclear and core-collapse). Spherical symmetry is assumed. 
 
